@@ -44,7 +44,6 @@ export default function Quiz({ file, onEnd } : QuizProps) {
     const quiz : QuizData | null = dataset?.[sequence[index]] ?? null;
 
     const submit = () => {
-        console.log('aqui', answer, quiz, hit);
         if(answer === null) return;
         if(answer === quiz.answer) setHit(hit => hit + 1);
         setIndex(index => index + 1);
