@@ -9,34 +9,34 @@ export default function App() {
 
     return <>
     
-    <header>
-        <Navbar bg="primary" data-bs-theme="dark">
+        <header>
+            <Navbar bg="primary" data-bs-theme="dark">
+                <Container>
+                    <Navbar.Brand>
+                        QUIZ
+                    </Navbar.Brand>
+                </Container>
+            </Navbar>
+        </header>
+
+        <main className="my-5 min-vh-70">
             <Container>
-                <Navbar.Brand>
-                    QUIZ
-                </Navbar.Brand>
+                { quiz === null ? (
+                    <Start onSubmit={ setQuiz } />
+                ) : (
+                    <Quiz file={ quiz } onEnd={ () => setQuiz(null) } />
+                ) }
             </Container>
-        </Navbar>
-    </header>
+        </main>
 
-    <main className="my-5 min-vh-70">
-        <Container>
-            { quiz === null ? (
-                <Start onSubmit={ setQuiz } />
-            ) : (
-                <Quiz file={ quiz } onEnd={ () => setQuiz(null) } />
-            ) }
-        </Container>
-    </main>
-
-    <footer>
-        <div className="border-top">
-            <Container className="d-flex justify-content-between">
-                <div>GitHub</div>
-                <div>&lt;gn.dev.br/&gt;</div>
-            </Container>
-        </div>
-    </footer>
+        <footer>
+            <div className="border-top">
+                <Container className="d-flex justify-content-between">
+                    <div>GitHub</div>
+                    <div>&lt;gn.dev.br/&gt;</div>
+                </Container>
+            </div>
+        </footer>
 
     
     </>;
