@@ -64,7 +64,7 @@ async function getData() : Promise<Data> {
 }
 
 getData().then(data => 
-    writeFile('src/data.json', JSON.stringify(data, undefined, 4)).then(() => 
+    writeFile('src/data.json', JSON.stringify(data)).then(() => 
         console.log('Data was created!')
     )
 );

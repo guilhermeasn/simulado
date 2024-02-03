@@ -8,3 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.min-vh-70 {
+    min-height: 70vh;
+}
