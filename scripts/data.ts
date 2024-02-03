@@ -54,7 +54,7 @@ async function main(origin : string, destiny : string) : Promise<void> {
         if(!(await lstat(origin + '/' + category)).isDirectory()) continue;
         data[category] = {}
         
-        for(let subcategory of (await readdir(`data/${category}/`))) {
+        for(let subcategory of (await readdir(origin + '/' + category))) {
 
             if(!/\.txt/i.test(subcategory)) continue;
 
