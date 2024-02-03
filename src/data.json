@@ -1,1 +1,34 @@
-{"test": 123}
+{
+    "Conhecimentos Bancários": {
+        "Sistema Financeiro Nacional": [
+            {
+                "options": [
+                    "a) I, apenas.",
+                    "b) I e II, apenas.",
+                    "c) I e III, apenas.",
+                    "d) II e III, apenas.",
+                    "e) I, II e III."
+                ],
+                "answer": 4
+            },
+            {
+                "options": [
+                    "a) dos mercados monetário, de crédito, de capitais e cambial;",
+                    "b) da atuação dos bancos comerciais;",
+                    "c) da atuação dos bancos centrais;",
+                    "d) das bolsas de valores;",
+                    "e) da atuação da CVM."
+                ],
+                "answer": 0
+            },
+            {
+                "options": [
+                    "Certo",
+                    "Errada"
+                ],
+                "answer": 0
+            }
+        ]
+    },
+    "Português": {}
+}
