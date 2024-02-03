@@ -34,7 +34,6 @@ type QuizData = {
 
 export default function Quiz({ file, onEnd } : QuizProps) {
 
-    // @ts-ignore
     const dataset : QuizData[] = useMemo(() => require('./data/' + file), [file]);
     const sequence = useMemo(() => getRandomIndex(dataset.length), [dataset]);
 
