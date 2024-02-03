@@ -6,7 +6,6 @@ type Subcategory = string;
 
 type Quiz = {
     question : string;
-    assertives ?: string[];
     options : string[];
     answer : number;
 }
@@ -15,7 +14,7 @@ type Data = Record<Category, Record<Subcategory, Quiz[]>>;
 
 function getQuiz(txt : string) : Quiz {
 
-    const question = txt.match(/.+?(?=([a-z]\).+?){2,})|RESPOSTA)/)?.[0] ?? '';
+    const question = txt.match(/.+?(?=([a-z]\).+?){2,}|RESPOSTA)/)?.[0] ?? '';
 
     const optionsData = txt.match(/(([a-z]\).+?){2,})RESPOSTA/)?.[1];
     const options = optionsData ? [ ...optionsData.matchAll(/.+?(?=[a-z]\)|$)/g) ].map(o => o.toString().trim()) : [ 'Certo', 'Errada' ];
@@ -30,7 +29,7 @@ function getQuiz(txt : string) : Quiz {
         question,
         options,
         answer
-    } as Quiz;
+    }
 
 }
 

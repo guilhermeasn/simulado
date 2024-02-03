@@ -2,6 +2,7 @@
     "Conhecimentos Bancários": {
         "Sistema Financeiro Nacional": [
             {
+                "question": "(FGV/2023/BANESTES/ANALISTA ECONÔMICO FINANCEIRO/GESTÃO FINANCEIRA) Em relação ao mercado monetário no Brasil, analise as afirmativas a seguir. I – As transferências de recursos a curtíssimo prazo, em geral com prazo de um dia, como aquelas realizadas entre as próprias instituições financeiras ou entre elas e o Banco Central, são realizadas no chamado mercado monetário. II – O mercado monetário é regido pela atuação do Banco Central que, por meio de suas operações de mercado aberto, regula o nível das reservas bancárias. III – A partir das taxas praticadas nas negociações diárias realizadas no SELIC, obtém-se a taxa SELIC (taxa média dos financiamentos diários, com lastro em títulos federais, apurados no SELIC), que representa importante referencial para a formação das taxas de juros no mercado, uma vez que é aceita, no Brasil, como a taxa de juros livre de risco, por envolver títulos públicos. Está correto o que se afirma em Alternativas ",
                 "options": [
                     "a) I, apenas.",
                     "b) I e II, apenas.",
@@ -12,6 +13,7 @@
                 "answer": 4
             },
             {
+                "question": "(FGV/2021/BANESTES/ANALISTA EM TECNOLOGIA DA INFORMAÇÃO/DESENVOLVIMENTO DE SISTEMAS) O Sistema Financeiro Nacional (SFN) é o conjunto de instituições e instrumentos que possibilitam a transferência de recursos entre os agentes econômicos superavitários e os deficitários. Essa transferência é possível por conta: ",
                 "options": [
                     "a) dos mercados monetário, de crédito, de capitais e cambial;",
                     "b) da atuação dos bancos comerciais;",
@@ -22,6 +24,7 @@
                 "answer": 0
             },
             {
+                "question": "(QUADRIX/2023/IPREV-DF/ANALISTA PREVIDENCIÁRIO/ESPECIALISTA EM INVESTIMENTOS) No que diz respeito ao sistema financeiro nacional, julgue o item.As funções do Banco Central (Bacen) e da Comissão de Valores Mobiliários (CVM) são, respectivamente, regular e administrar o sistema financeiro nacional; e fixar e implementar as normas do mercado de valores mobiliários",
                 "options": [
                     "Certo",
                     "Errada"
