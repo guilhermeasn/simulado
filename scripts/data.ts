@@ -1,7 +1,11 @@
-import { lstat, readFile, readdir, writeFile } from "fs/promises";
+import {
+    lstat,
+    readFile,
+    readdir,
+    writeFile
+} from "fs/promises";
 
 type Category = string;
-
 type Subcategory = string;
 
 type Quiz = {
