@@ -15,6 +15,8 @@ type Data = Record<Category, Record<Subcategory, Quiz[]>>;
 
 function getQuiz(txt : string) : Quiz {
 
+    const question = txt.match(/.+?(?=([a-z]\).+?){2,})|RESPOSTA)/)?.[0] ?? '';
+
     const optionsData = txt.match(/(([a-z]\).+?){2,})RESPOSTA/)?.[1];
     const options = optionsData ? [ ...optionsData.matchAll(/.+?(?=[a-z]\)|$)/g) ].map(o => o.toString().trim()) : [ 'Certo', 'Errada' ];
 
@@ -25,6 +27,7 @@ function getQuiz(txt : string) : Quiz {
     if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada');
 
     return {
+        question,
         options,
         answer
     } as Quiz;
