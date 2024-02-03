@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Button, ListGroup } from "react-bootstrap";
+import { Alert, Button, ListGroup } from "react-bootstrap";
 import data from './data.json';
 
 export type QuizProps = {
@@ -28,7 +28,7 @@ function getRandomIndex(length : number) : number[] {
 
 }
 
-type Quiz = {
+type QuizData = {
     question : string;
     options : string[];
     answer : number;
@@ -37,20 +37,34 @@ type Quiz = {
 export default function Quiz({ category, subcategory, onEnd } : QuizProps) {
 
     // @ts-ignore
-    const dataset : Quiz[] = useMemo(() => data[category][subcategory], [category, subcategory]);
+    const dataset : QuizData[] = useMemo(() => data[category][subcategory], [category, subcategory]);
     const sequence = useMemo(() => getRandomIndex(dataset.length), [dataset]);
 
     const [ index, setIndex ] = useState<number>(0);
     const [ hit, setHit ] = useState<number>(0);
     const [ answer, setAnswer ] = useState<number | null>(null);
 
-    const quiz : Quiz = useMemo(() => dataset[sequence[index]], [dataset, sequence, index]);
+    const quiz : QuizData | null = dataset?.[sequence[index]] ?? null;
 
-    return (
+    const submit = () => {
+        console.log('aqui', answer, quiz, hit);
+        if(answer === null) return;
+        if(answer === quiz.answer) setHit(hit => hit + 1);
+        setIndex(index => index + 1);
+        setAnswer(null);
+    }
+
+    return quiz ? (
 
         <div>
 
             <div>
+
+                <Alert variant="warning" className="d-flex justify-content-around">
+                    <div>Acertou: { hit }</div>
+                    <div>Errou: { index - hit }</div>
+                    <div>Faltam: { sequence.length - index }</div>
+                </Alert>
 
                 <p>{ quiz.question }</p>
 
@@ -68,8 +82,30 @@ export default function Quiz({ category, subcategory, onEnd } : QuizProps) {
                 <Button className="mx-2" variant="outline-secondary" size="lg" onClick={ onEnd }>
                     Encerrar
                 </Button>
-                <Button className="mx-2" variant="success" size="lg">
+                <Button className="mx-2" variant="success" size="lg" onClick={ submit } disabled={ answer === null }>
                     Confirmar
+                </Button>
+            </div>
+
+        </div>
+
+    ) : (
+
+        <div>
+
+            <Alert variant="success">
+                <Alert.Heading>Acertou</Alert.Heading>
+                { hit } { hit === 1 ? 'questão' : 'questões' }
+            </Alert>
+
+            <Alert variant="danger">
+                <Alert.Heading>Errou</Alert.Heading>
+                { index - hit } { index - hit === 1 ? 'questão' : 'questões' }
+            </Alert>
+
+            <div className="text-center">
+                <Button className="mx-2" variant="dark" size="lg" onClick={ onEnd }>
+                    Encerrar
                 </Button>
             </div>
 

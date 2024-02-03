@@ -33,7 +33,7 @@ export default function Start({ onSubmit } : StartProps) {
             </FloatingLabel>
 
             <FloatingLabel className='my-3' label='Subcategoria'>
-                <Form.Select title='Subcategoria' value={ subcategory ?? 'empty' } onChange={ input => setSubcategory(input.currentTarget.value) } disabled={ !category }>
+                <Form.Select title='Subcategoria' value={ subcategory ?? 'empty' } onChange={ input => setSubcategory(input.currentTarget.value) } disabled={ category === null }>
                     <option value='empty' disabled>Selecione</option>
                     { category !== null && Object.keys(data[category as keyof typeof data]).map((subcategory, index) => (
                         <option key={ index } value={ subcategory }>{ subcategory }</option>
@@ -41,7 +41,7 @@ export default function Start({ onSubmit } : StartProps) {
                 </Form.Select>
             </FloatingLabel>
 
-            <Button type='submit' variant='primary' size='lg' disabled={ !category || !subcategory }>
+            <Button type='submit' variant='primary' size='lg' disabled={ category === null || subcategory === null }>
                 Iniciar
             </Button>
 
