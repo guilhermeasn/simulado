@@ -1,8 +1,7 @@
+import data from './data.json';
+
 export default function App() {
 
-    const data = require('@data');
-    console.log(data);
-
-    return <>APP</>;
+    return <pre>{ JSON.stringify(data, undefined, 4) }</pre>;
 
 }

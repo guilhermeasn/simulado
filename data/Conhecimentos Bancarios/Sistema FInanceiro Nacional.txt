@@ -19,3 +19,18 @@ títulos públicos.
  e) I, II e III.
 
 RESPOSTA: e
+
+-----
+
+(FGV/2021/BANESTES/ANALISTA EM TECNOLOGIA DA INFORMAÇÃO/DESENVOLVIMENTO 
+DE SISTEMAS) O Sistema Financeiro Nacional (SFN) é o conjunto de instituições e instrumentos 
+que possibilitam a transferência de recursos entre os agentes econômicos superavitários 
+e os deficitários.
+ Essa transferência é possível por conta:
+ a) dos mercados monetário, de crédito, de capitais e cambial;
+ b) da atuação dos bancos comerciais;
+ c) da atuação dos bancos centrais;
+ d) das bolsas de valores;
+ e) da atuação da CVM.
+
+RESPOSTA: a
