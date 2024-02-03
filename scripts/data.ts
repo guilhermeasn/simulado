@@ -1,12 +1,15 @@
 import {
     lstat,
+    mkdir,
     readFile,
     readdir,
+    rm,
     writeFile
 } from "fs/promises";
 
 type Category = string;
 type Subcategory = string;
+type file = string;
 
 type Quiz = {
     question : string;
@@ -14,7 +17,7 @@ type Quiz = {
     answer : number;
 }
 
-type Data = Record<Category, Record<Subcategory, Quiz[]>>;
+type Data = Record<Category, Record<Subcategory, file>>;
 
 function getQuiz(txt : string) : Quiz {
 
@@ -37,34 +40,38 @@ function getQuiz(txt : string) : Quiz {
 
 }
 
-async function getData() : Promise<Data> {
+async function main(origin : string, destiny : string) : Promise<void> {
+
+    await rm(destiny, { recursive: true, force: true });
+    await mkdir(destiny);
 
     const data : Data = {};
 
-    for(let category of (await readdir('data/'))) {
+    let count : number = 100;
 
-        if(!(await lstat('data/' + category)).isDirectory()) continue;
+    for(let category of (await readdir(origin))) {
+
+        if(!(await lstat(origin + '/' + category)).isDirectory()) continue;
         data[category] = {}
         
         for(let subcategory of (await readdir(`data/${category}/`))) {
 
             if(!/\.txt/i.test(subcategory)) continue;
 
-            let txt = await readFile(`data/${category}/${subcategory}`, { encoding: 'utf8' });
+            let txt = await readFile(`${origin}/${category}/${subcategory}`, { encoding: 'utf8' });
             txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
 
-            data[category][subcategory.replace(/.txt$/i, '')] = txt.split('-----').map(getQuiz);
+            const file = `q${count++}.json`
+            await writeFile(destiny + '/' + file, JSON.stringify(txt.split('-----').map(getQuiz)));
+
+            data[category][subcategory.replace(/.txt$/i, '')] = file;
 
         }
 
     }
 
-    return data;
+    await writeFile(destiny + '/index.json', JSON.stringify(data, undefined, 4));
 
 }
 
-getData().then(data => 
-    writeFile('src/data.json', JSON.stringify(data)).then(() => 
-        console.log('Data was created!')
-    )
-);
+main('data', 'src/data').then(() => console.log('The data was compiled!'));

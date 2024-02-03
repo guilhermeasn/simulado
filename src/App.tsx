@@ -5,7 +5,7 @@ import Start from "./Start";
 
 export default function App() {
 
-    const [ quiz, setQuiz ] = useState<[string, string] | null>(null);
+    const [ quiz, setQuiz ] = useState<string | null>(null);
 
     return <>
     
@@ -24,7 +24,7 @@ export default function App() {
             { quiz === null ? (
                 <Start onSubmit={ setQuiz } />
             ) : (
-                <Quiz category={ quiz[0] } subcategory={ quiz[1] } onEnd={ () => setQuiz(null) } />
+                <Quiz file={ quiz } onEnd={ () => setQuiz(null) } />
             ) }
         </Container>
     </main>

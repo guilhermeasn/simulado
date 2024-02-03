@@ -1,10 +1,8 @@
 import { useMemo, useState } from "react";
 import { Alert, Button, ListGroup } from "react-bootstrap";
-import data from './data.json';
 
 export type QuizProps = {
-    category : string;
-    subcategory : string;
+    file : string;
     onEnd : () => void;
 }
 
@@ -34,10 +32,10 @@ type QuizData = {
     answer : number;
 }
 
-export default function Quiz({ category, subcategory, onEnd } : QuizProps) {
+export default function Quiz({ file, onEnd } : QuizProps) {
 
     // @ts-ignore
-    const dataset : QuizData[] = useMemo(() => data[category][subcategory], [category, subcategory]);
+    const dataset : QuizData[] = useMemo(() => require('./data/' + file), [file]);
     const sequence = useMemo(() => getRandomIndex(dataset.length), [dataset]);
 
     const [ index, setIndex ] = useState<number>(0);

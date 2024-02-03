@@ -1,9 +1,9 @@
 import { FormEvent, useState } from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
-import data from './data.json';
+import data from './data/index.json';
 
 export type StartProps = {
-    onSubmit : (set: [string, string]) => void
+    onSubmit : (file : string) => void
 }
 
 const categories = Object.keys(data);
@@ -16,7 +16,8 @@ export default function Start({ onSubmit } : StartProps) {
     const submit = (event : FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if(!category || !subcategory) return;
-        onSubmit([ category, subcategory ]);
+        // @ts-ignore
+        onSubmit(data[category][subcategory]);
     }
 
     return (
