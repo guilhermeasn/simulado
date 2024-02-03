@@ -104,6 +104,9 @@ export default function Quiz({ category, subcategory, onEnd } : QuizProps) {
             </Alert>
 
             <div className="text-center">
+                <Button className="mx-2" variant="outline-primary" size="lg" onClick={ () => setIndex(0) }>
+                    Refazer
+                </Button>
                 <Button className="mx-2" variant="dark" size="lg" onClick={ onEnd }>
                     Encerrar
                 </Button>
