@@ -51,7 +51,7 @@ async function getData() : Promise<Data> {
             if(!/\.txt/i.test(subcategory)) continue;
 
             let txt = await readFile(`data/${category}/${subcategory}`, { encoding: 'utf8' });
-            txt = txt.replace(/[\n\r]/g, '');
+            txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
 
             data[category][subcategory.replace(/.txt$/i, '')] = txt.split('-----').map(getQuiz);
 
