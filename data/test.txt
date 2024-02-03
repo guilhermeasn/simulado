@@ -1,0 +1,21 @@
+(FGV/2023/BANESTES/ANALISTA ECONÔMICO FINANCEIRO/GESTÃO FINANCEIRA) Em 
+relação ao mercado monetário no Brasil, analise as afirmativas a seguir.
+ I – As transferências de recursos a curtíssimo prazo, em geral com prazo de um dia, como 
+aquelas realizadas entre as próprias instituições financeiras ou entre elas e o Banco Central, 
+são realizadas no chamado mercado monetário.
+ II – O mercado monetário é regido pela atuação do Banco Central que, por meio de suas 
+operações de mercado aberto, regula o nível das reservas bancárias.
+ III – A partir das taxas praticadas nas negociações diárias realizadas no SELIC, obtém-se a 
+taxa SELIC (taxa média dos financiamentos diários, com lastro em títulos federais, apurados 
+no SELIC), que representa importante referencial para a formação das taxas de juros no 
+mercado, uma vez que é aceita, no Brasil, como a taxa de juros livre de risco, por envolver 
+títulos públicos.
+ Está correto o que se afirma em
+ Alternativas
+ a) I, apenas.
+ b) I e II, apenas.
+ c) I e III, apenas.
+ d) II e III, apenas.
+ e) I, II e III.
+
+RESPOSTA: e
