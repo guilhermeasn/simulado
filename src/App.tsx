@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Navbar } from "react-bootstrap";
+import { Container, Image, Navbar } from "react-bootstrap";
 import Icon from "./Icon";
 import Quiz from "./Quiz";
 import Start from "./Start";
@@ -24,6 +24,7 @@ export default function App() {
             <Navbar bg="primary" data-bs-theme="dark">
                 <Container className="user-select-none">
                     <Navbar.Brand href=".">
+                        <Image src="favicon-32x32.png" className="me-2" />
                         Simulado
                     </Navbar.Brand>
                     <div className="text-light clickable" onClick={ () => setStatistic(true) }>
