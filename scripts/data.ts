@@ -24,7 +24,7 @@ function getQuiz(txt : string) : QuizData {
     const question = txt.match(/.+?(?=([a-z]\).+?){2,}|RESPOSTA)/)?.[0] ?? '';
 
     const optionsData = txt.match(/(([a-z]\).+?){2,})RESPOSTA/)?.[1];
-    const options = optionsData ? [ ...optionsData.matchAll(/.+?(?=[a-z]\)|$)/g) ].map(o => o.toString().trim()) : [ 'Certo', 'Errada' ];
+    const options = optionsData ? [ ...optionsData.matchAll(/.+?(?=[a-z]\)|$)/g) ].map(o => o.toString().trim()) : [ 'Certo', 'Errado' ];
 
     const answerData = txt.match(/RESPOSTA:\s*([a-z])/)?.[1]
     if(!answerData) throw Error('Existe uma pergunta sem RESPOSTA');
