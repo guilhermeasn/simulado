@@ -22,16 +22,16 @@ function getQuiz(txt : string, origin : string) : QuizData {
     const attachs = [ ...txt.matchAll(/(?<=ANEXO:\s*)[\w.]+/g) ].map(o => o.toString()).filter(f => existsSync(origin + '/__anexos__/' + f));
     txt = txt.replace(/ANEXO:\s*[\w.]+/g, '');
 
-    const question = txt.match(/.+?(?=([a-z]\).+?){2,}|RESPOSTA)/)?.[0] ?? '';
+    const question = txt.match(/.+?(?=([a-z]\).+?){2,}|RESPOSTA)/i)?.[0] ?? '';
 
-    const optionsData = txt.match(/(([a-z]\).+?){2,})RESPOSTA/)?.[1];
+    const optionsData = txt.match(/\s(([a-z]\).+?){2,})RESPOSTA/i)?.[1];
     const options = optionsData ? [ ...optionsData.matchAll(/.+?(?=[a-z]\)|$)/g) ].map(o => o.toString().trim()) : [ 'Certo', 'Errado' ];
 
-    const answerData = txt.match(/RESPOSTA:\s*([a-z])/)?.[1]
-    if(!answerData) throw Error('Existe uma pergunta sem RESPOSTA');
+    const answerData = txt.match(/RESPOSTA:\s*([a-z])/i)?.[1]
+    if(!answerData) throw Error('Existe uma pergunta sem RESPOSTA: ' + question);
 
-    const answer = options.findIndex(o => o.charAt(0).toLowerCase() === answerData.toLowerCase());
-    if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada');
+    const answer = options.findIndex(o => o.charAt(0).toLowerCase() === answerData.charAt(0).toLowerCase());
+    if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada: ' + question);
 
     return {
         attachs,

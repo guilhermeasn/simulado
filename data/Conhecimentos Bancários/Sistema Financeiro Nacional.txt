@@ -11,14 +11,117 @@ no SELIC), que representa importante referencial para a formação das taxas de 
 mercado, uma vez que é aceita, no Brasil, como a taxa de juros livre de risco, por envolver 
 títulos públicos.
  Está correto o que se afirma em
- Alternativas
  a) I, apenas.
  b) I e II, apenas.
  c) I e III, apenas.
  d) II e III, apenas.
  e) I, II e III.
-
+ 
 RESPOSTA: e
+
+-----
+
+(CESGRANRIO/2023/AGERIO/ADVOGADO) Como integrante do Sistema Financeiro 
+Nacional, cabe ao Conselho Monetário Nacional
+ a) definir as metas anuais de inflação.
+ b) determinar as taxas básicas de juros da economia brasileira.
+ c) atuar como emprestador de última instância.
+ d) calcular o Índice Nacional de Preços ao Consumidor Amplo (IPCA).
+ e) executar a política fiscal.
+ 
+RESPOSTA: a
+
+-----
+
+(FGV/2023/BANESTES/TÉCNICO BANCÁRIO) Sobre o sistema financeiro nacional 
+e o mercado bancário, assinale a instituição listada a seguir que é considerada uma 
+instituição bancária.
+ a) Caixa Econômica Federal.
+ b) Associação de poupança e empréstimo.
+ c) Sociedade de crédito, financiamento e investimento.
+ d) Sociedade de crédito imobiliário.
+ e) Sociedade de arrendamento mercantil.
+ 
+RESPOSTA: a
+
+-----
+
+(QUADRIX/2023/IPREV-DF/ANALISTA PREVIDENCIÁRIO/ESPECIALISTA EM INVESTIMENTOS) 
+No que diz respeito ao sistema financeiro nacional, julgue o item.
+ As funções do Banco Central (Bacen) e da Comissão de Valores Mobiliários (CVM) são, 
+respectivamente, regular e administrar o sistema financeiro nacional; e fixar e implementar 
+as normas do mercado de valores mobiliários.
+ 
+RESPOSTA: C
+
+-----
+
+(QUADRIX/2023/IPREV-DF/ANALISTA PREVIDENCIÁRIO/ESPECIALISTA EM INVESTIMENTOS) 
+No que diz respeito ao sistema financeiro nacional, julgue o item.
+ A estrutura do sistema financeiro nacional é composta por três órgãos normativos: o 
+Conselho Monetário Nacional (CMN), a Comissão Nacional de Seguros Privados (CNSP) e o 
+Banco Central do Brasil (BCB).
+ 
+RESPOSTA: E
+
+-----
+
+(INSTITUTO AOCP/2022/BANESE/TÉCNICO BANCÁRIO III/ÁREA DE INFORMÁTICA/
+ DESENVOLVIMENTO) O Sistema Financeiro Nacional (SFN) é composto por um conjunto de 
+entidades e instituições que promovem a intermediação financeira. Nesse sentido, analise 
+as assertivas e assinale a alternativa que aponta as corretas.
+ I – A organização do Sistema Financeiro Nacional (SFN) acontece por meio de agentes 
+normativos, supervisores e operadores.
+ II – O Conselho Monetário Nacional, órgão normativo, tem a responsabilidade de formular 
+a política da moeda e do crédito.
+ III – O Banco Central do Brasil, entidade supervisora, tem por objetivo monitorar e fiscalizar 
+o sistema financeiro, além de executar as políticas monetária, cambial e de crédito.
+ IV – A comissão de valores mobiliários (CVM), bancos, caixas econômicas e a bolsa de valores 
+são exemplos de operadores do SFN.
+ a) Apenas I e II.
+ b) Apenas I, II e III.
+ c) I, II, III e IV.
+ d) Apenas II, III e IV.
+ e) Apenas II e III.
+ 
+RESPOSTA: b
+
+-----
+
+(IADES/2022/BRB/ESCRITURÁRIO) A composição do Sistema Financeiro Nacional (SFN) 
+por órgãos normativos, supervisores e operadores visa a fomentar o encontro entre credores 
+e tomadores de recursos, viabilizando a circulação de ativos, a realização de investimentos 
+e o pagamento de compromissos financeiros. Acerca da constituição do SFN, assinale a 
+alternativa correta.
+ a) O BCB fiscaliza as corretoras e as distribuidoras de títulos e de valores mobiliários. Estas 
+também podem ser fiscalizadas pela CVM.
+ b) O órgão normativo do SFN é o Conselho Monetário Nacional (CMN), que é o responsável 
+pela formulação das políticas relativas à moeda, ao crédito, ao câmbio, aos seguros e à 
+previdência.
+ c) Superintendência Nacional de Previdência Complementar (Previc) atua na supervisão de 
+entidades abertas de previdência complementar (fundos de pensão).
+ d) As sociedades de capitalização devem atuar em conformidade com a normatização do 
+CMN, sendo reguladas pelo BCB.
+ e) A Comissão de Valores Mobiliários (CVM) possui atuação secundária na supervisão das 
+cooperativas de crédito, cabendo ao Banco Central do Brasil (BCB) o papel principal nessa 
+supervisão.
+ 
+RESPOSTA: a
+
+-----
+
+(FGV/2021/BANESTES/ANALISTA EM TECNOLOGIA DA INFORMAÇÃO/DESENVOLVIMENTO 
+DE SISTEMAS) O Sistema Financeiro Nacional possui órgãos normativos, entidades supervisoras 
+e operadores.
+ Os órgãos normativos, além do Conselho Nacional de Seguros Privados (CNSP), incluem:
+ a) a Casa da Moeda e o Banco Central;
+ b) o Conselho Monetário Nacional (CMN) e o Conselho Nacional de Previdência Complementar 
+(CNPC);
+ c) a Susep e o Banco Central;
+ d) o Banco Central e a CVM;
+ e) as caixas econômicas e as bolsas de valores.
+ 
+RESPOSTA: b
 
 -----
 
@@ -32,16 +135,212 @@ e os deficitários.
  c) da atuação dos bancos centrais;
  d) das bolsas de valores;
  e) da atuação da CVM.
-
+ 
 RESPOSTA: a
 
 -----
 
-(QUADRIX/2023/IPREV-DF/ANALISTA PREVIDENCIÁRIO/ESPECIALISTA EM INVESTIMENTOS) 
-No que diz respeito ao sistema financeiro nacional, julgue o item.
-As funções do Banco Central (Bacen) e da Comissão de Valores Mobiliários (CVM) são, 
-respectivamente, regular e administrar o sistema financeiro nacional; e fixar e implementar 
-as normas do mercado de valores mobiliários
+(CESPE-CEBRASPE/2021/BANESE/TÉCNICO BANCÁRIO I) No que concerne às instituições 
+e ao funcionamento do Sistema Financeiro Nacional (SFN), julgue o item que se segue.
+ Nas operações de fusão e aquisição no âmbito do SFN, o Banco Central possui competência 
+para autorizar alterações de controle acionário, independentemente de posicionamento 
+prévio da Receita Federal do Brasil.
 
-RESPOSTA: certo
+RESPOSTA: C
 
+-----
+
+(CESPE-CEBRASPE/2021/BANESE/TÉCNICO BANCÁRIO I) No que concerne às instituições 
+e ao funcionamento do Sistema Financeiro Nacional (SFN), julgue o item que se segue.
+ O Banco Central do Brasil fiscaliza instituições fora do escopo do SFN.
+ 
+RESPOSTA: C
+
+-----
+
+(CESPE-CEBRASPE/2021/BANESE/TÉCNICO BANCÁRIO I) No que concerne às instituições 
+e ao funcionamento do Sistema Financeiro Nacional (SFN), julgue o item que se segue.
+ A Casa da Moeda possui a função de emitir moeda.
+ 
+RESPOSTA: E
+
+-----
+
+(CESPE-CEBRASPE/2021/BANESE/TÉCNICO BANCÁRIO III/ÁREA DE INFORMÁTICA/
+ DESENVOLVIMENTO) No que se refere às instituições e ao funcionamento do Sistema 
+Financeiro Nacional (SFN), julgue o item que se segue.
+ As empresas de cartão de crédito não participam do SFN.
+ 
+RESPOSTA: C
+
+-----
+
+(CESPE-CEBRASPE/2021/BANESE/TÉCNICO BANCÁRIO III/ÁREA DE INFORMÁTICA/
+ DESENVOLVIMENTO) No que se refere às instituições e ao funcionamento do Sistema 
+Financeiro Nacional (SFN), julgue o item que se segue.
+ O Tesouro Nacional, órgão vinculado ao Ministério da Economia, é o responsável pela emissão 
+de moeda no Brasil.
+ 
+RESPOSTA: E
+
+-----
+
+(CESGRANRIO/2021/BANCO DA AMAZÔNIA/TÉCNICO CIENTÍFICO) O Sistema Financeiro 
+Nacional é constituído por um conjunto de instituições financeiras, cada uma delas 
+caracterizada pelas funções mais importantes que assume. As instituições financeiras que 
+f
+ inanciam investimentos, com juros subsidiados ou não pelo governo, com o objetivo de 
+fomentar a atividade econômica de uma região ou de um país no longo prazo são os bancos
+ a) centrais
+ b) múltiplos
+ c) comerciais
+ d) de investimento
+ e) de desenvolvimento
+ 
+RESPOSTA: e
+
+-----
+
+(VUNESP/2020/FITO/ANALISTA DE GESTÃO/FINANÇAS) Assinale a alternativa correta 
+a respeito do Sistema Financeiro Nacional.
+ a) As instituições financeiras, conhecidas por bancárias, são aquelas a quem se permite a 
+criação de moeda por meio do recebimento de depósitos à vista.
+ b) Corretoras, bancos de investimento e sociedades de arrendamento mercantil são exemplos 
+de instituições financeiras conhecidas como bancárias.
+ c) O Sistema Financeiro Nacional é constituído pelas instituições financeiras privadas 
+existentes no país.
+ d) O Banco Central do Brasil (BACEN) tem por finalidade básica a normatização, fiscalização 
+e o controle do mercado de valores mobiliários, representado principalmente por ações, 
+partes beneficiárias e debêntures.
+ e) O Conselho Monetário Nacional (CMN) desenvolve uma série de atividades executivas, 
+tais como o recebimento de depósito à vista.
+ 
+RESPOSTA: a
+
+-----
+
+(IBADE/2020/PREFEITURA DE VILA VELHA/ES/ANALISTA PÚBLICO DE GESTÃO/
+ ECONOMISTA) O lucro do governo derivado da emissão de moeda ou a diferença entre o 
+valor do dinheiro e o custo para produzir e distribuí-lo, é denominado:
+ a) split.
+ b) margem.
+ c) poder de emissão.
+ d) política monetária.
+ e) senhoriagem.
+ 
+RESPOSTA: e
+
+-----
+
+(FCC/2019/BANRISUL/ESCRITURÁRIO) No âmbito do Sistema Financeiro Nacional, a 
+atribuição da coordenação da Dívida Pública Federal externa e interna é
+ a) do Banco Central do Brasil.
+ b) do Ministério da Fazenda.
+ c) da Secretaria do Tesouro Nacional.
+ d) do Ministério do Planejamento, Orçamento e Gestão.
+ e) do Conselho Monetário Nacional.
+ 
+RESPOSTA: e
+
+-----
+
+(CESPE/2016/FUNPRESP-JUD/ANALISTA/CONTROLE INTERNO/AUDITORIA) A respeito 
+das competências e atribuições do Conselho Monetário Nacional (CMN), do Banco Central 
+do Brasil (BCB), da Comissão de Valores Mobiliários (CVM), da Superintendência Nacional de 
+Previdência Complementar (PREVIC) e da Superintendência de Seguros Privados (SUSEP), 
+julgue o próximo item.
+ É competência do BCB conceder autorizações a instituições financeiras para serem 
+transformadas, fundidas, incorporadas ou encampadas.
+ 
+RESPOSTA: C
+
+-----
+
+(CESPE/2016/FUNPRESP-JUD/ANALISTA/CONTROLE INTERNO/AUDITORIA) A respeito 
+das competências e atribuições do Conselho Monetário Nacional (CMN), do Banco Central 
+do Brasil (BCB), da Comissão de Valores Mobiliários (CVM), da Superintendência Nacional de 
+Previdência Complementar (PREVIC) e da Superintendência de Seguros Privados (SUSEP), 
+julgue o próximo item.
+ À SUSEP compete decretar a intervenção e liquidação extrajudicial de entidade fechada de 
+previdência complementar, bem como nomear interventor ou liquidante.
+
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ O Conselho Monetário Nacional é órgão normativo em relação a entidade fechada de 
+previdência complementar.
+ 
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ O Conselho Nacional de Seguros privados é órgão normativo em relação a entidade aberta 
+de previdência complementar.
+ 
+RESPOSTA: C
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ A Superintendência Nacional de Previdência Complementar, PREVIC, é Órgão normativo em 
+relação a entidade fechada de previdência complementar.
+ 
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ A Bolsa de Valores é órgão supervisor, tendo por âmbito de atuação a moeda, crédito, 
+capitais e câmbio.
+ 
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ As cooperativas de crédito, no SFN, são classificadas como órgão operador, e estão submetidas 
+a supervisão da Comissão de Valores Mobiliários.
+ 
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ O Conselho Monetário Nacional é um órgão operador do Sistema Financeiro Nacional.
+ 
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ A Comissão de Valores Mobiliários é órgão supervisor do Sistema Financeiro Nacional, que 
+se submete a normatização do Conselho Nacional de Seguros Privados.
+ 
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ O Banco Central do Brasil é órgão supervisor do Sistema Financeiro Nacional, que se submete 
+a normatização do Conselho Monetário Nacional.
+ 
+RESPOSTA: C
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ A Superintendência de Seguros Privados é órgão supervisor do Sistema Financeiro Nacional, 
+que se submete a normatização do Conselho Monetário Nacional.
+ 
+RESPOSTA: E
+
+-----
+
+(INÉDITA/2023) A respeito do Sistema Financeiro Nacional, responda:
+ A PREVIC é órgão operador do Sistema Financeiro Nacional, supervisionada pelo Conselho 
+Nacional de Previdência Complementar
+
+RESPOSTA: E
