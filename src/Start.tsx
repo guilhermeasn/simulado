@@ -1,17 +1,26 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useMemo, useState } from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
-import data from './data/index.json';
+import { getData } from './App';
 
 export type StartProps = {
     onSubmit : (file : string) => void
 }
 
-const categories = Object.keys(data);
+type Category = string;
+type Subcategory = string;
+type File = string;
+
+export type Data = Record<Category, Record<Subcategory, File>>;
 
 export default function Start({ onSubmit } : StartProps) {
 
+    const [ data, setData ] = useState<Data>({});
     const [ category, setCategory ] = useState<string | null>(null);
     const [ subcategory, setSubcategory ] = useState<string | null>(null);
+
+    useEffect(() => { getData().then(setData); }, []);
+
+    const categories = useMemo(() => Object.keys(data), [data]);
 
     const submit = (event : FormEvent<HTMLFormElement>) => {
         event.preventDefault();

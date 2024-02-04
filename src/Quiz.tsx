@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Alert, Button, ListGroup } from "react-bootstrap";
+import { getData } from "./App";
 
 function getRandomInt(min : number, max : number) : number {
     min = Math.ceil(min);
@@ -45,17 +46,19 @@ export type QuizData = {
 
 export default function Quiz({ file, onEnd } : QuizProps) {
 
-    const dataset : QuizData[] = useMemo(() => require('./data/' + file), [file]);
-    const sequence : number[] = useMemo(() => getRandomIndex(dataset.length), [dataset]);
+    const [ data, setData ] = useState<QuizData[]>([]);
+    useEffect(() => { getData(file).then(setData) }, [ file ]);
+
+    const sequence : number[] = useMemo(() => getRandomIndex(data.length), [data]);
 
     const [ index, setIndex ] = useState<number>(0);
     const [ hit, setHit ] = useState<Array<boolean | null>>([]);
     const [ answer, setAnswer ] = useState<number | null>(null);
 
     const getHits = useCallback((stat : boolean | null) : number => hit.filter(h => h === stat).length, [hit]);
-    useEffect(() => setHit(Array(dataset.length).fill(null)), [dataset]);
+    useEffect(() => setHit(Array(data.length).fill(null)), [data]);
 
-    const quiz : QuizData | null = useMemo(() => dataset?.[sequence?.[index] ?? 'end'] ?? null, [dataset, index, sequence]);
+    const quiz : QuizData | null = useMemo(() => data?.[sequence?.[index] ?? 'end'] ?? null, [data, index, sequence]);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => { if(quiz === null) save(file, getHits(true), getHits(false)); }, [quiz]);
@@ -75,8 +78,15 @@ export default function Quiz({ file, onEnd } : QuizProps) {
 
     const remake = useCallback(() => {
         setIndex(0);
-        setHit(Array(dataset.length).fill(null));
-    }, [dataset]);
+        setHit(Array(data.length).fill(null));
+    }, [data]);
+
+    const end = () => {
+        setData([]);
+        onEnd();
+    };
+
+    if(data.length === 0) return <>Aguarde ...</>;
 
     return quiz ? (
 
@@ -105,7 +115,7 @@ export default function Quiz({ file, onEnd } : QuizProps) {
             </div>
 
             <div className="d-flex justify-content-center mt-4">
-                <Button className="mx-2" variant="outline-secondary" size="lg" onClick={ onEnd }>
+                <Button className="mx-2" variant="outline-secondary" size="lg" onClick={ end }>
                     Encerrar
                 </Button>
                 <Button className="mx-2" variant="outline-secondary" size="lg" onClick={ back } disabled={ index === 0 }>
@@ -136,7 +146,7 @@ export default function Quiz({ file, onEnd } : QuizProps) {
                 <Button className="mx-2" variant="outline-primary" size="lg" onClick={ remake }>
                     Refazer
                 </Button>
-                <Button className="mx-2" variant="dark" size="lg" onClick={ onEnd }>
+                <Button className="mx-2" variant="dark" size="lg" onClick={ end }>
                     Encerrar
                 </Button>
             </div>

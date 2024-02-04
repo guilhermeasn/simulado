@@ -5,6 +5,11 @@ import Quiz from "./Quiz";
 import Start from "./Start";
 import Statistic from "./Statistic";
 
+export async function getData(file : string = 'index') {
+    const response = await fetch(`/data/${file.replace(/.json$/i, '')}.json`);
+    return await response.json();
+}
+
 export default function App() {
 
     const [ quiz, setQuiz ] = useState<string | null>(null);

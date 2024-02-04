@@ -8,12 +8,7 @@ import {
 } from "fs/promises";
 
 import type { QuizData } from '../src/Quiz';
-
-type Category = string;
-type Subcategory = string;
-type file = string;
-
-type Data = Record<Category, Record<Subcategory, file>>;
+import type { Data } from '../src/Start';
 
 function getQuiz(txt : string) : QuizData {
 
@@ -78,4 +73,4 @@ async function main(origin : string, destiny : string) : Promise<void> {
 
 }
 
-main('data', 'src/data').then(() => console.log('The data was compiled!'));
+main('data', 'public/data').then(() => console.log('The data was compiled!'));

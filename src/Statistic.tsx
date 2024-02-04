@@ -1,9 +1,9 @@
 import map from "object-as-array/map";
 import { useEffect, useState } from "react";
 import { Button, Modal, Table } from "react-bootstrap";
+import { getData } from "./App";
 import Icon from "./Icon";
 import { FormatSave } from "./Quiz";
-import files from './data/files.json';
 
 export type StatisticProps = {
     show : boolean;
@@ -11,6 +11,9 @@ export type StatisticProps = {
 }
 
 export default function Statistic({ show, onHide } : StatisticProps) {
+
+    const [ files, setFiles ] = useState<Record<string, string>>({});
+    useEffect(() => { getData('files').then(setFiles) }, []);
 
     const [ data, setData ] = useState<FormatSave>({});
     useEffect(() => { if(show && typeof localStorage === 'object') setData(JSON.parse(localStorage.getItem('quiz_score') ?? '{}')); }, [ show ]);
