@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { Alert, Button, ListGroup } from "react-bootstrap";
+import { Alert, Button, ListGroup, Spinner } from "react-bootstrap";
 import { getData } from "./App";
 
 function getRandomInt(min : number, max : number) : number {
@@ -85,7 +85,7 @@ export default function Quiz({ file, onEnd } : QuizProps) {
         onEnd();
     };
 
-    if(data.length === 0) return <>Aguarde ...</>;
+    if(data.length === 0) return <Loading />;
 
     return quiz ? (
 
@@ -153,5 +153,16 @@ export default function Quiz({ file, onEnd } : QuizProps) {
         </div>
 
     );
+
+}
+
+export function Loading() {
+
+    return (
+        <div className="d-flex justify-content-center">
+            <Spinner animation="border" variant="secondary" />
+            <div className="ms-3 mt-1 text-secondary">Aguarde ...</div>
+        </div>
+    )
 
 }
