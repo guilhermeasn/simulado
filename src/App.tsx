@@ -21,7 +21,7 @@ export default function App() {
             <Navbar bg="primary" data-bs-theme="dark">
                 <Container className="user-select-none">
                     <Navbar.Brand href=".">
-                        QUIZ
+                        Simulado
                     </Navbar.Brand>
                     <div className="text-light clickable" onClick={ () => setModal(true) }>
                         <Icon variant="chart" />
