@@ -3,7 +3,7 @@ import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { getData } from './App';
 
 export type StartProps = {
-    onSubmit : (file : string) => void
+    onSubmit : (file : string, name : string) => void
 }
 
 type Category = string;
@@ -26,7 +26,7 @@ export default function Start({ onSubmit } : StartProps) {
         event.preventDefault();
         if(!category || !subcategory) return;
         // @ts-ignore
-        onSubmit(data[category][subcategory]);
+        onSubmit(data[category][subcategory], category + ': ' + subcategory);
     };
 
     return (

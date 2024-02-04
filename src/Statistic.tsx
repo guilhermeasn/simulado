@@ -1,7 +1,6 @@
 import map from "object-as-array/map";
 import { useEffect, useState } from "react";
 import { Button, Modal, Table } from "react-bootstrap";
-import { getData } from "./App";
 import Icon from "./Icon";
 import { FormatSave } from "./Quiz";
 
@@ -11,9 +10,6 @@ export type StatisticProps = {
 }
 
 export default function Statistic({ show, onHide } : StatisticProps) {
-
-    const [ files, setFiles ] = useState<Record<string, string>>({});
-    useEffect(() => { getData('files').then(setFiles) }, []);
 
     const [ data, setData ] = useState<FormatSave>({});
     useEffect(() => { if(show && typeof localStorage === 'object') setData(JSON.parse(localStorage.getItem('quiz_score') ?? '{}')); }, [ show ]);
@@ -49,9 +45,9 @@ export default function Statistic({ show, onHide } : StatisticProps) {
                     </thead>
 
                     <tbody>
-                        { Object.keys(data).length ? map(data, ([ s, e ], file) => (
-                            <tr key={ file }>
-                                <td className="text-truncate">{ (files as Record<string, string>)?.[file] ?? file  }</td>
+                        { Object.keys(data).length ? map(data, ([ s, e ], name) => (
+                            <tr key={ name }>
+                                <td className="text-truncate">{ name  }</td>
                                 <td className="bg-success-subtle text-success">{ s }</td>
                                 <td className="bg-danger-subtle text-danger">{ e }</td>
                             </tr>

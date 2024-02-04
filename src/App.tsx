@@ -13,7 +13,7 @@ export async function getData(file : string = 'index') {
 
 export default function App() {
 
-    const [ quiz, setQuiz ] = useState<string | null>(null);
+    const [ quiz, setQuiz ] = useState<[string, string] | null>(null);
 
     const [ view, setView ] = useState<null | string>(null);
     const [ statistic, setStatistic ] = useState<boolean>(false);
@@ -37,9 +37,9 @@ export default function App() {
         <main className="my-5 min-vh-70">
             <Container>
                 { quiz === null ? (
-                    <Start onSubmit={ setQuiz } />
+                    <Start onSubmit={ (file, name) => setQuiz([ file, name ]) } />
                 ) : (
-                    <Quiz onOpen={ setView } file={ quiz } onEnd={ () => setQuiz(null) } />
+                    <Quiz name={ quiz[1] } onOpen={ setView } file={ quiz[0] } onEnd={ () => setQuiz(null) } />
                 ) }
             </Container>
         </main>
