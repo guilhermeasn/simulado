@@ -40,7 +40,7 @@ export type QuizProps = {
 }
 
 export type QuizData = {
-    attachs ?: string[];
+    attachs  : string[];
     owner   ?: string;
     question : string;
     options  : string[];
@@ -106,7 +106,7 @@ export default function Quiz({ file, onOpen, onEnd } : QuizProps) {
 
                 <p className="fw-bolder">{ quiz.question }</p>
 
-                { quiz.attachs && (
+                { quiz.attachs.length > 0 && (
                     <div className="d-flex justify-content-end">
                         { quiz.attachs.map(file => (
                             <p className="m-2 text-primary clickable" onClick={ () => onOpen(file) }>

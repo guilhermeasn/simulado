@@ -8,16 +8,18 @@ import {
     writeFile
 } from "fs/promises";
 
+import { existsSync } from "fs";
+
 import type { QuizData } from '../src/Quiz';
 import type { Data } from '../src/Start';
 
-function getQuiz(txt : string) : QuizData {
+function getQuiz(txt : string, origin : string) : QuizData {
 
     txt = txt.trim();
     const owner = txt.match(/^\(.+?\)/)?.[0]?.replace(/^\((.+)\)$/, '$1');
     if(owner) txt = txt.replace(/^\(.+?\)/, '');
 
-    const attachs = [ ...txt.matchAll(/(?<=ANEXO:\s*)[\w.]+/g) ].map(o => o.toString());
+    const attachs = [ ...txt.matchAll(/(?<=ANEXO:\s*)[\w.]+/g) ].map(o => o.toString()).filter(f => existsSync(origin + '/__anexos__/' + f));
     txt = txt.replace(/ANEXO:\s*[\w.]+/g, '');
 
     const question = txt.match(/.+?(?=([a-z]\).+?){2,}|RESPOSTA)/)?.[0] ?? '';
@@ -70,7 +72,7 @@ async function main(origin : string, destiny : string) : Promise<void> {
             txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
 
             const file = 'q' + count++;
-            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(getQuiz)));
+            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(t => getQuiz(t, origin))));
 
             data[category][subcategory.replace(/.txt$/i, '')] = file;
             files[file] = subcategory.replace(/.txt$/i, '');
