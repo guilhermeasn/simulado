@@ -6,7 +6,7 @@ import Start from "./Start";
 import Statistic from "./Statistic";
 
 export async function getData(file : string = 'index') {
-    const response = await fetch(`/data/${file.replace(/.json$/i, '')}.json`);
+    const response = await fetch(`/data/${file}.json`);
     return await response.json();
 }
 

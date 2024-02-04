@@ -60,8 +60,7 @@ export default function Quiz({ file, onEnd } : QuizProps) {
 
     const quiz : QuizData | null = useMemo(() => data?.[sequence?.[index] ?? 'end'] ?? null, [data, index, sequence]);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    useEffect(() => { if(quiz === null) save(file, getHits(true), getHits(false)); }, [quiz]);
+    useEffect(() => { if(quiz === null && file && hit.length) save(file, getHits(true), getHits(false)); }, [file, getHits, hit.length, quiz]);
 
     const submit = useCallback(() => {
         if(answer === null) return;

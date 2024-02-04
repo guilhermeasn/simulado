@@ -58,8 +58,8 @@ async function main(origin : string, destiny : string) : Promise<void> {
             let txt = await readFile(`${origin}/${category}/${subcategory}`, { encoding: 'utf8' });
             txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
 
-            const file = `q${count++}.json`
-            await writeFile(destiny + '/' + file, JSON.stringify(txt.split('-----').map(getQuiz)));
+            const file = 'q' + count++;
+            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(getQuiz)));
 
             data[category][subcategory.replace(/.txt$/i, '')] = file;
             files[file] = subcategory.replace(/.txt$/i, '');
