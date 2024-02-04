@@ -47,6 +47,7 @@ async function main(origin : string, destiny : string) : Promise<void> {
     await mkdir(destiny);
 
     const data : Data = {};
+    const files : Record<string, string> = {};
 
     let count : number = 100;
 
@@ -66,12 +67,14 @@ async function main(origin : string, destiny : string) : Promise<void> {
             await writeFile(destiny + '/' + file, JSON.stringify(txt.split('-----').map(getQuiz)));
 
             data[category][subcategory.replace(/.txt$/i, '')] = file;
+            files[file] = subcategory.replace(/.txt$/i, '');
 
         }
 
     }
 
     await writeFile(destiny + '/index.json', JSON.stringify(data, undefined, 4));
+    await writeFile(destiny + '/files.json', JSON.stringify(files, undefined, 4));
 
 }
 

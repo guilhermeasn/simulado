@@ -12,3 +12,11 @@ body {
 .min-vh-70 {
     min-height: 70vh;
 }
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    filter: brightness(80%);
+}

@@ -1,20 +1,26 @@
 import { useState } from "react";
 import { Container, Navbar } from "react-bootstrap";
+import Icon from "./Icon";
 import Quiz from "./Quiz";
 import Start from "./Start";
+import Statistic from "./Statistic";
 
 export default function App() {
 
     const [ quiz, setQuiz ] = useState<string | null>(null);
+    const [ modal, setModal ] = useState<boolean>(false);
 
     return <>
     
         <header>
             <Navbar bg="primary" data-bs-theme="dark">
-                <Container>
+                <Container className="user-select-none">
                     <Navbar.Brand>
                         QUIZ
                     </Navbar.Brand>
+                    <div className="text-light clickable" onClick={ () => setModal(true) }>
+                        <Icon variant="chart" />
+                    </div>
                 </Container>
             </Navbar>
         </header>
@@ -37,6 +43,11 @@ export default function App() {
                 </Container>
             </div>
         </footer>
+
+        <Statistic
+            show={ modal }
+            onHide={ () => setModal(false) }
+        />
 
     
     </>;

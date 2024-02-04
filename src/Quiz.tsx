@@ -21,6 +21,15 @@ function getRandomIndex(length : number) : number[] {
 
 }
 
+export type FormatSave = Record<string, { a: number; s: number; e: number }>;
+
+function save(file : string, s : number, e : number) : void {
+    if(typeof localStorage !== 'object') return;
+    const data = JSON.parse(localStorage.getItem('quiz_score') ?? '{}') as FormatSave;
+    data[file] = file in data ? { a: data[file].a + 1, s: s + data[file].s, e: e + data[file].e } : { a: 1, s, e };
+    localStorage.setItem('quiz_score', JSON.stringify(data));
+}
+
 export type QuizProps = {
     file : string;
     onEnd : () => void;
@@ -46,6 +55,9 @@ export default function Quiz({ file, onEnd } : QuizProps) {
     useEffect(() => setHit(Array(dataset.length).fill(null)), [dataset]);
 
     const quiz : QuizData | null = useMemo(() => dataset?.[sequence?.[index] ?? 'end'] ?? null, [dataset, index, sequence]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => { if(quiz === null) save(file, getHits(true), getHits(false)); }, [quiz]);
 
     const submit = useCallback(() => {
         if(answer === null) return;
