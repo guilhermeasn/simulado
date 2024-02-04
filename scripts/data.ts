@@ -1,4 +1,5 @@
 import {
+    cp,
     lstat,
     mkdir,
     readFile,
@@ -16,6 +17,9 @@ function getQuiz(txt : string) : QuizData {
     const owner = txt.match(/^\(.+?\)/)?.[0]?.replace(/^\((.+)\)$/, '$1');
     if(owner) txt = txt.replace(/^\(.+?\)/, '');
 
+    const attachs = [ ...txt.matchAll(/(?<=ANEXO:\s*)[\w.]+/g) ].map(o => o.toString());
+    txt = txt.replace(/ANEXO:\s*[\w.]+/g, '');
+
     const question = txt.match(/.+?(?=([a-z]\).+?){2,}|RESPOSTA)/)?.[0] ?? '';
 
     const optionsData = txt.match(/(([a-z]\).+?){2,})RESPOSTA/)?.[1];
@@ -28,10 +32,11 @@ function getQuiz(txt : string) : QuizData {
     if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada');
 
     return {
+        attachs,
         owner,
         question,
         options,
-        answer
+        answer,
     }
 
 }
@@ -49,6 +54,12 @@ async function main(origin : string, destiny : string) : Promise<void> {
     for(let category of (await readdir(origin))) {
 
         if(!(await lstat(origin + '/' + category)).isDirectory()) continue;
+
+        if(category === '__anexos__') {
+            await cp(origin + '/__anexos__', destiny + '/__anexos__', { recursive: true });
+            continue;
+        }
+
         data[category] = {}
         
         for(let subcategory of (await readdir(origin + '/' + category))) {

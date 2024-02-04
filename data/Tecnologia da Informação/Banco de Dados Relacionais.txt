@@ -504,3 +504,16 @@ caracteres em geral, não apresentando recursos para tratar dados multimídias, 
 filmes e fotografias
 
 RESPOSTA: errada
+
+-----
+
+(VUNESP/TRIBUNAL DE JUSTIÇA DE SP/OFICIAL DE JUSTIÇA/2009) Observe a figura de 
+uma planilha no MS Access XP, na sua configuração padrão, para resolver a próxima questão.
+ a) Primeiro Nome.
+ b) Ano Nascimento.
+ c) Registro Geral.
+ d) Sobrenome.
+ e) Cidade.
+
+ANEXO: sgbd1.png
+RESPOSTA: c

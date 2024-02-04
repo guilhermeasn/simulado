@@ -38,10 +38,11 @@ export type QuizProps = {
 }
 
 export type QuizData = {
-    owner ?: string
+    attachs ?: string[];
+    owner   ?: string;
     question : string;
-    options : string[];
-    answer : number;
+    options  : string[];
+    answer   : number;
 }
 
 export default function Quiz({ file, onEnd } : QuizProps) {
