@@ -20,7 +20,7 @@ export default function App() {
         <header>
             <Navbar bg="primary" data-bs-theme="dark">
                 <Container className="user-select-none">
-                    <Navbar.Brand>
+                    <Navbar.Brand href=".">
                         QUIZ
                     </Navbar.Brand>
                     <div className="text-light clickable" onClick={ () => setModal(true) }>
@@ -43,8 +43,8 @@ export default function App() {
         <footer>
             <div className="border-top">
                 <Container className="d-flex justify-content-between">
-                    <div>GitHub</div>
-                    <div>&lt;gn.dev.br/&gt;</div>
+                    <a href='https://github.com/guilhermeasn/quiz' target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://gn.dev.br/" target="_blank" rel="noopener noreferrer">&lt;gn.dev.br/&gt;</a>
                 </Container>
             </div>
         </footer>
