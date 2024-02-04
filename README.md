@@ -1,5 +1,5 @@
-# Quiz
+# Simulado
 
 Um simples criador de simulados
 
-https://guilhermeasn.github.io/quiz/
+https://guilhermeasn.github.io/simulado/
