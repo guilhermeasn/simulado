@@ -7,19 +7,19 @@ import {
     writeFile
 } from "fs/promises";
 
+import type { QuizData } from '../src/Quiz';
+
 type Category = string;
 type Subcategory = string;
 type file = string;
 
-type Quiz = {
-    question : string;
-    options : string[];
-    answer : number;
-}
-
 type Data = Record<Category, Record<Subcategory, file>>;
 
-function getQuiz(txt : string) : Quiz {
+function getQuiz(txt : string) : QuizData {
+
+    txt = txt.trim();
+    const owner = txt.match(/^\(.+?\)/)?.[0]?.replace(/^\((.+)\)$/, '$1');
+    if(owner) txt = txt.replace(/^\(.+?\)/, '');
 
     const question = txt.match(/.+?(?=([a-z]\).+?){2,}|RESPOSTA)/)?.[0] ?? '';
 
@@ -33,6 +33,7 @@ function getQuiz(txt : string) : Quiz {
     if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada');
 
     return {
+        owner,
         question,
         options,
         answer

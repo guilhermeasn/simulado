@@ -1,0 +1,506 @@
+(CESPE/SERPRO/TÉCNICO/PROGRAMAÇÃO E CONTROLE DE SERVIÇOS DE TECNOLOGIA 
+DA INFORMAÇÃO/2013) Julgue os itens seguintes, relativos à manipulação de dados em 
+sistemas de computação. Nesse sentido, considere que a sigla SGBD, sempre que empregada, 
+se refere a sistema gerenciador de banco de dados.
+ Um banco de dados é formado por uma coleção de dados sem um relacionamento lógico, 
+com um significado interpretado por uma aplicação ou um programa computacional.
+
+RESPOSTA: errada
+
+-----
+
+(CEFET-MG/TÉCNICO DE TECNOLOGIA DA INFORMAÇÃO/2014 ) Um sistema de banco 
+de dados tem como função:
+ a) permitir as operações de inclusão, exclusão e envio de dados.
+ b) agrupar dados relacionais e logicamente coerentes.
+ c) facilitar a integração de dados e aplicativos.
+ d) proteger dados colecionados e linkados.
+ e) disponibilizar acesso exclusivo e local.
+ 
+RESPOSTA: b
+
+-----
+
+(FCC/SABESP/TÉCNICO EM SISTEMAS DE SANEAMENTO 01/ELETRÔNICA/2018) Banco 
+de dados é
+ a) um aplicativo que manipula dados inter-relacionados.
+ b) um sistema de nuvens híbridas utilizados em sistemas bancários.
+ c) um conjunto de dados necessários para o correto funcionamento do sistema operacional.
+ d) um conjunto de dados que visa manter a integridade e segurança do sistema.
+ e) uma coleção de dados inter-relacionados, representando informações sobre um domínio 
+específico.
+
+RESPOSTA: e
+
+-----
+
+(ESAF/CVM/ANALISTA DE SISTEMAS/PROVA 2 /2010) Sistema gerenciador de banco 
+de dados é um software que
+ a) incorpora as funções de definição, recuperação e alteração de dados em um banco de 
+dados.
+ b) incorpora as funções de compilação e interpretação de um banco de dados.
+ c) incorpora as funções de aquisição, normatização e geração de dados em um banco de 
+dados.
+ d) relaciona dados com atributos em um modelo gerenciador de relacionamento.
+ e) substitui as funções de definição, recuperação e alteração de dados em um processo decisório.
+
+RESPOSTA: a
+
+-----
+
+(ADMINISTRADOR/ENAP/ADAPTADA/2006) Analise a seguinte afirmação relacionada a 
+Conceitos Básicos de Informática e gerenciadores de banco de dados.
+ [Um SGBD (Sistema de Gerenciamento de Banco de Dados) é um sistema computadorizado de 
+armazenamento e organização de dados. Pode trazer vantagens, como alteração e recuperação 
+de dados com mais rapidez, armazenagem de informação em menor espaço, minimização de 
+redundâncias e de inconsistências de informações, compartilhamento de estrutura e dados].
+
+RESPOSTA: certa
+
+-----
+
+(CESPE/TRE-GO/ TÉCNICO DO JUDICIÁRIO/PROGRAMAÇÃO DE SISTEMAS/2015) Acerca 
+de bancos de dados, julgue os seguintes itens.
+ Nas organizações, o emprego de sistemas gerenciadores de banco de dados promove a 
+segurança e a consistência dos dados, favorecendo a redundância e garantindo a integridade 
+dos dados.
+
+RESPOSTA: errada
+
+-----
+
+ (UFG/UEAP/ANALISTA DE TECNOLOGIA DA INFORMAÇÃO/BANCO DE DADOS/2014) 
+Considere uma arquitetura de três esquemas para banco de dados: nível externo, nível 
+conceitual e nível interno. O conceito independência de dados diz respeito à capacidade para 
+modificar o esquema em um nível do sistema de banco de dados, sem ter de alterar o esquema
+ a) no mesmo nível.
+ b) em qualquer nível.
+ c) no próximo nível superior.
+ d) no próximo nível inferior.
+ 
+RESPOSTA: c
+
+-----
+
+(ESAF/MF/ANALISTA DE FINANÇAS E CONTROLE/GESTÃO EM INFRAESTRUTURA DE 
+TI/2013) Valendo-se de uma analogia com programas de computador, é correto afirmar que:
+ a) os comandos de atribuição no programa correspondem a uma instância de um esquema 
+de banco de dados.
+ b) um esquema de banco de dados corresponde às declarações de variável em um programa.
+ c) um esquema de banco de dados corresponde a estruturas recursivas em um programa.
+ d) os valores das variáveis no programa correspondem às declarações de variáveis em um 
+esquema de banco de dados.
+ e) um esquema de banco de dados corresponde às instruções utilizando variáveis do tipo 
+string em um programa.
+
+RESPOSTA: b
+
+-----
+
+(ESAF/CGU/ANALISTA DE FINANÇAS E CONTROLE/PROVA 3/AUDITORIA E FISCALIZAÇÃO/
+ GERAL/2012) O projeto geral do banco de dados é
+ a) o esquema do banco de dados.
+ b) o planejamento estratégico do fluxo de dados.
+ c) o esquema de dimensionamento físico-financeiro do banco de dados
+  d) a versão inicial de instanciação dos dados a serem carregados no sistema.
+ e) o esquema de atualização dos dados para manutenção de consistência.
+
+RESPOSTA: a
+
+-----
+
+(CESPE/TJ-SE/TÉCNICO/PROGRAMAÇÃO DE SISTEMAS/2014) A atomicidade de um 
+SGBD garante que cada transação seja executada de maneira singular, ou seja, que cada 
+transação possua um identificador unívoco. O isolamento do SGBD garante, por sua vez, 
+que as transações sejam executadas isoladamente uma das outras.
+
+RESPOSTA: errada
+
+-----
+
+(VUNESP/DESENVOLVESP/ANALISTA DE SISTEMAS/2014) Há 4 propriedades básicas 
+que uma transação de um banco de dados relacional deve respeitar. Assinale a alternativa 
+que contém duas dessas propriedades.
+ a) Atomicidade e isolamento.
+ b) Consistência e normalização.
+ c) Durabilidade e paralelismo.
+ d) Normalização e atomicidade.
+ e) Paralelismo e isolamento.
+
+RESPOSTA: a
+
+-----
+
+(CESPE/TJ-SE/2014) A construção de um modelo particular para cada SGBD, obtido a 
+partir da transformação do modelo conceitual, é o objetivo do projeto lógico
+
+RESPOSTA: certa
+
+-----
+
+(CESPE/SEFAZ-RS/AUDITOR-FISCAL DA RECEITA ESTADUAL/BLOCO I/2019) As funções 
+de um sistema de gerenciamento de banco de dados (SGBD) incluem
+ a)gerenciar a integridade de dados, o dicionário e o armazenamento de dados, bem como 
+a memória do computador enquanto o SGBD estiver em execução.
+ b)transformar e apresentar dados, controlar o acesso de multiusuário e prover interfaces 
+de comunicação do banco de dados.
+ c)gerenciar o becape e a recuperação dos dados, bem como o escalonamento de processos 
+no processador por meio do banco de dados.
+ d) gerenciar o sistema de arquivos e a segurança do banco de dados.
+ e)gerenciar a entrada e saída de dispositivos, linguagens de acesso ao banco de dados e 
+interfaces de programação de aplicações.
+
+RESPOSTA: b
+
+-----
+
+(CETRO/ANVISA/ANALISTA ADMINISTRATIVO/ÁREA 5/2013) Quanto aos sistemas de 
+gerenciamento de banco de dados, assinale a alternativa correta.
+ a) Sua função geral é fornecer uma interface entre o usuário e o sistema de banco de dados.
+ b) Sempre tem um gerenciador de transações.
+ c) O dicionário de dados impõe certos controles sobre a recuperação e concorrência do 
+banco de dados.
+ d) A verificação da integridade dos dados deve ser feita somente no tempo de compilação.
+ e) Não incluem compiladores de DML.
+
+RESPOSTA: a
+
+-----
+
+(VUNESP/CETESB/ANALISTA DE TECNOLOGIA DA INFORMAÇÃO - ADMINISTRADOR DE 
+BANCO DE DADOS/2013) Alguns sistemas gerenciadores de bancos de dados relacionais 
+possuem um módulo de otimização de consultas que visa
+ a) criptografar as senhas de todos os usuários do banco de dados.
+ b) duplicar todos os atributos que sejam chave primária de suas tabelas.
+ c) excluir os registros que possuam valores nulos em seus atributos.
+ d) melhorar o desempenho das consultas submetidas ao gerenciador.
+ e) reduzir o número de registros resultante da consulta efetuada.
+
+RESPOSTA: d
+
+-----
+ 
+(CESPE/DEPEN/AGENTE PENITENCIÁRIO FEDERAL/TECNOLOGIA DA INFORMAÇÃO/2015) 
+Os níveis interno, externo e conceitual da arquitetura de um banco de dados são responsáveis, 
+respectivamente, por gerenciar o modo como os dados serão armazenados fisicamente, 
+por gerenciar o modo como os dados serão vistos pelos usuários e por representar todo o 
+conteúdo de informações do banco de dados
+
+RESPOSTA: certa
+
+-----
+ 
+(ESAF/AFC-STN/INFRAESTRUTURA DE TI/2008) Em relação ao nível lógico de abstração 
+de dados nos sistemas de bancos de dados, é correto afirmar que
+ a) descreve estruturas de dados complexas de baixo nível.
+ b) descreve quais dados estão armazenados no banco de dados e as relações existentes 
+entre eles.
+ c) simplifica a interação entre o sistema e os usuários.
+ d) disponibiliza um conjunto de programas de aplicação que ocultam detalhes dos tipos 
+de dados.
+ e) descreve um registro como um bloco de armazenamento, composto por palavras ou bytes.
+
+RESPOSTA: b
+
+-----
+ 
+(FUNIVERSA/CEB/ANALISTA DE SISTEMAS/2010) Banco de dados pode ser definido 
+como um conjunto ou coleção de dados armazenados que podem ser usados para alimentar 
+sistemas de informação específicos.
+ Um dos objetivos de um banco de dados é oferecer uma visão abstrata dos dados aos usuários 
+que deles necessitam; para isso, a arquitetura do banco é formada por três níveis: (1) físico 
+(2) conceitual e (3) visão do usuário. Assinale a alternativa que contém, respectivamente, 
+os nomes dados aos níveis da arquitetura de um banco de dados apresentados.
+ a) Plano, relacional e hierárquico.
+ b) Interno, lógico e externo.
+ c) Remoto, distribuído e rede.
+ d) Anel, malha e árvore.
+ e) Hardware, software e aplicação.
+
+
+RESPOSTA: b
+
+-----
+
+Existe diferença entre Banco de Dados e SGBD
+
+RESPOSTA: certo
+
+-----
+
+(FCC/ANA/MPE-SE/MPE-SE/INFORMÁTICA II/GESTÃO E ANÁLISE DE PROJETO DE 
+SISTEMA/2013) A capacidade de alterar o esquema conceitual sem mudar o esquema 
+externo ou os programas, podendo modificar o esquema conceitual para expandir o banco 
+de dados (adicionando um tipo de registro ou item de dados), variar as restrições ou reduzir 
+o banco de dados (removendo um tipo de registro ou item de dados) é chamada de
+ a) modularidade.
+ b) modelo conceitual.
+ c) independência lógica de dados.
+ d) polimorfismo.
+ e) agregação.
+
+RESPOSTA: c
+
+-----
+
+(FCC/ANA/MPE-SE/MPE-SE/INFORMÁTICA II/GESTÃO E ANÁLISE DE PROJETO DE 
+SISTEMA/2013) Na arquitetura de uma estrutura básica de SGBD, as funcionalidades do 
+sistema são distribuídas entre dois tipos de módulos:
+ I – É projetado para ser executado em uma estação de trabalho ou em um computador 
+pessoal. Em geral, os programas de aplicação e as interfaces de usuário, que acessam o 
+banco de dados, são processados neste módulo.
+ II – Trata do armazenamento de dados, acessos, pesquisas e outras funções.
+ Os módulos definidos em I e II, são, respectivamente
+ a) terminal e unidade de processamento.
+ b) local e remoto.
+ c) cliente e servidor.
+ d) desktop e mainframe.
+ e) básico e avançado.
+
+RESPOSTA: c
+
+-----
+
+(FCC/ANA/MPE-SE/MPE-SE/INFORMÁTICA II/GESTÃO E ANÁLISE DE PROJETO DE 
+SISTEMA/2013) Em projetos de Banco de Dados, o objetivo da arquitetura de três-esquemas 
+é separar o usuário da aplicação do banco de dados físico. Nessa arquitetura, os esquemas 
+podem ser definidos por três níveis:
+ I – O nível interno tem um esquema que descreve a estrutura de armazenamento físico do 
+banco de dados. Esse esquema utiliza um modelo de dado físico e descreve os detalhes 
+complexos do armazenamento de dados e caminhos de acesso ao banco;
+ II – O nível conceitual possui um esquema que descreve a estrutura de todo o banco de dados 
+para a comunidade de usuários. O esquema conceitual oculta os detalhes das estruturas de 
+armazenamento físico e se concentra na descrição de entidades, tipos de dados, conexões, 
+operações de usuários e restrições. Geralmente, um modelo de dados representacional 
+é usado para descrever o esquema conceitual quando o sistema de banco de dados for 
+implementado. Esse esquema de implementação conceitual é normalmente baseado em 
+um projeto de esquema conceitual em um modelo de dados de alto nível;
+ III – O nível interno ainda abrange os esquemas externos ou visões de usuários. Cada 
+esquema interno descreve a parte do banco de dados que um dado grupo de usuários tem 
+interesse e oculta o restante do banco de dados desse grupo. Como no item anterior, cada 
+esquema é tipicamente implementado usando-se um modelo de dados representacional, 
+possivelmente baseado em um projeto de esquema externo em um modelo de dados de 
+alto nível.
+ Está correto o que se afirma em
+ a) II, apenas.
+ b) II e III, apenas.
+ c) I, II e III.
+ d) I e II, apenas.
+ e) III, apenas.
+
+RESPOSTA: d
+
+-----
+ 
+(CESPE/SERPRO/ANALISTA/ESPECIALIZAÇÃO: ADMINISTRAÇÃO DE SERVIÇOS DE 
+TECNOLOGIA DA INFORMAÇÃO/2013) Registros são mapeados em blocos de discos, sendo 
+organizações lógicas de um arquivo. Blocos possuem um tamanho fixo, que é determinado 
+pelas propriedades físicas do disco e pelo sistema operacional, entretanto o tamanho dos 
+registros pode variar.
+
+RESPOSTA: certa
+
+-----
+
+(CESPE/SERPRO/TÉCNICO/PROGRAMAÇÃO E CONTROLE DE SERVIÇOS DE TECNOLOGIA 
+DA INFORMAÇÃO/2013) Julgue os itens seguintes, relativos à manipulação de dados em 
+sistemas de computação. Nesse sentido, considere que a sigla SGBD, sempre que empregada, 
+se refere a sistema gerenciador de banco de dados. [SGBD é um software construído para 
+facilitar as atividades de definição, construção e manipulação de um banco de dados].
+
+RESPOSTA: certa
+
+-----
+
+(UFG/UEAP/ANALISTA DE TECNOLOGIA DA INFORMAÇÃO/BANCO DE DADOS/2014) 
+Sistema Gerenciador de Banco de Dados (SGBD) é um software de propósito geral, voltado 
+para a definição, construção e manipulação de bancos de dados. São exemplos de SGBD:
+a) ORACLE Forms, DB2 e MARIADB.
+ b) SQL, PHP e BD2.
+ c) SQL Server, ORACLE e MySQL.
+ d) ORACLE, SQL Server e PLSQL.
+
+RESPOSTA: c
+
+-----
+
+(UFG/UEAP/ANALISTA DE TECNOLOGIA DA INFORMAÇÃO/BANCO DE DADOS/2014) Em 
+uma situação de falha, o Sistema Gerenciador de Banco de Dados (SGBD) busca restaurar 
+o banco de dados ao estado consistente mais recente antes do momento da falha. Para 
+realizar essa função, o sistema precisa manter informações sobre as mudanças que foram 
+aplicadas aos itens de dados pelas diversas transações. Tais mudanças são armazenadas no
+ a) catálogo do banco de dados.
+ b) arquivo de log do banco de dados.
+ c) dicionário do banco de dados.
+ d) arquivo de metadados do banco de dados.
+
+RESPOSTA: b
+
+-----
+
+(CESPE/SERPRO/TÉCNICO/PROGRAMAÇÃO E CONTROLE DE SERVIÇOS DE TECNOLOGIA 
+DA INFORMAÇÃO/2013) Julgue os itens seguintes, relativos à manipulação de dados em 
+sistemas de computação. Nesse sentido, considere que a sigla SGBD, sempre que empregada, 
+se refere a sistema gerenciador de banco de dados. [Na arquitetura de um sistema de banco 
+de dados, o elemento importante para o gerenciamento do banco é a aplicação/programa].
+
+RESPOSTA: errada
+
+-----
+
+(CESPE/BANCO DA AMAZÔNIA/ÁREA TECNOLOGIA DA INFORMAÇÃO/ADMINISTRAÇÃO 
+DE DADOS/2010) Acerca da divisão nos níveis interno, conceitual e externo relativos à 
+arquitetura de banco de dados (BD), julgue os itens a seguir.
+ O nível conceitual é aquele mais próximo do usuário e ocupa-se da forma como os dados 
+são vistos por cada usuário.
+
+RESPOSTA: errada
+
+-----
+
+(CESPE/SEBRAE/AC/ANALISTA DE INFORMÁTICA/2007) Em um sistema de banco de 
+dados, a arquitetura dos três esquemas (nível externo, nível conceitual e nível interno) 
+facilita a implementação da independência física e lógica dos dados, pois quando um 
+esquema é modificado em algum nível, o esquema no nível inferior permanece inalterado, 
+sendo necessário alterar somente os mapeamentos entre dois níveis: o que foi alterado e 
+o esquema do nível superior a este.
+
+RESPOSTA: errada
+
+-----
+
+(CESPE/BANCO DA AMAZÔNIA/TECNOLOGIA DA INFORMAÇÃO/ADMINISTRAÇÃO DE 
+DADOS/2010) O nível conceitual de dados é um nível de simulação entre os níveis interno 
+e externo
+
+RESPOSTA: errada
+
+-----
+
+(CESPE/BANCO DA AMAZÔNIA/TECNOLOGIA DA INFORMAÇÃO/ADMINISTRAÇÃO DE 
+DADOS/2010) Se um sistema de banco de dados provê independência física dos dados, é 
+correto inferir que esse sistema também permite independência lógica de dados.
+
+RESPOSTA: errada
+
+-----
+
+(CESPE/BANCO DA AMAZÔNIA/TECNOLOGIA DA INFORMAÇÃO/ADMINISTRAÇÃO DE 
+DADOS/2010) O mapeamento do nível conceitual para o nível interno é a chave para a 
+independência de dados física, assim como o mapeamento do nível externo para o conceitual 
+é a chave para a independência lógica de dados.
+
+RESPOSTA: c
+
+-----
+
+(CESGRANRIO/PETROBRAS/ANALISTA DE SISTEMAS JÚNIOR/ÁREA ENG. SOFTWARE/2010) 
+A independência de dados lógica, definição componente da arquitetura de três esquemas 
+para sistemas de banco de dados, corresponde à capacidade de se efetuarem
+ a) mudanças no nível conceitual, sem a necessidade de modificações no nível externo e 
+em programas aplicativos.
+ b) mudanças no nível interno, sem a necessidade de modificações nos níveis conceitual e 
+externo.
+ c) mudanças no nível externo, sem a necessidade de modificações nos níveis interno e 
+conceitual.
+ d) consultas em SQL sobre um banco de dados relacional, independente da estruturação 
+física dos dados armazenados.
+ e) consultas em SQL sobre um banco de dados relacional, independente da lógica de 
+programação usada em programas aplicativos.
+
+RESPOSTA: a
+
+-----
+
+(ESAF/MF/ANALISTA DE FINANÇAS E CONTROLE/GESTÃO EM INFRAESTRUTURA DE TI/2013) 
+Na administração de banco de dados, são utilizados os seguintes tipos de armazenamento:
+ a) volátil, não volátil e estável.
+ b) variável, fixo e estável.
+ c) volátil, atribuído e lógico.
+ d) generalizado, localizado e dinâmico.
+ e) volátil, invariável e estabilizado.
+
+RESPOSTA: a
+
+-----
+
+(CESPE/BANCO DA AMAZÔNIA/TECNOLOGIA DA INFORMAÇÃO/ADMINISTRAÇÃO DE 
+DADOS/2010) Os administradores de banco de dados devem estar atentos aos fatores 
+que podem influenciar na eficiência do projeto físico — como, por exemplo, a análise 
+das consultas e transações do banco de dados e a frequência esperada das chamadas de 
+consultas e transações —, mas não deve se preocupar com as restrições de tempo das 
+consultas e das transações.
+
+RESPOSTA: errada
+
+-----
+ 
+(CESPE/BANCO DA AMAZÔNIA/ÁREA TECNOLOGIA DA INFORMAÇÃO/ADMINISTRAÇÃO 
+DE DADOS/2010) O administrador do banco de dados deve ter um bom conhecimento a 
+respeito do sistema operacional no qual o SGBD está instalado, pois, em caso de problemas 
+e definição de procedimentos de recuperação, um bom conhecimento sobre os processos, 
+a gerência de memória e o sistema de arquivos utilizados pelo sistema operacional pode 
+fazer uma grande diferença no desempenho do BD.
+
+RESPOSTA: certa
+
+-----
+
+(FCC/BANCO DO BRASIL/2006) Uma interface padrão utilizada para acessar SGBD, 
+Sistemas de Gerenciamento de Banco de Dados, desenvolvida pela Microsoft, é denominada:
+ a) RAID.
+ b) NTFS.
+ c) FAT32.
+ d) ODBC.
+ e) CLUSTER.
+
+RESPOSTA: d
+
+-----
+
+(CESPE/EMBASA/TI/ADMINISTRAÇÃO DE DADOS/ADAPTADA/2010) No que concerne 
+a conceitos básicos de banco de dados, julgue os itens a seguir. [Os metadados, definidos 
+como dados dos dados, são abstrações dos dados de mais alto nível que descrevem dados 
+de um nível inferior.
+
+RESPOSTA: certa
+
+-----
+ 
+(CESPE/EMBASA/ANALISTA DE TI-BD/ADAPTADA/2010) A respeito das técnicas de 
+administração de dados, julgue os itens que se seguem:
+ A organização de um conjunto de metadados utilizados no banco de dados colabora para 
+o gerenciamento de informações e permite a melhor interpretação dos usuários quanto 
+aos termos identificadores dos itens.
+ 041. 
+041. (ESAF/MPOG/2008) Um Sistema de Gerenciamento de Banco de Dados tem como função:
+ a) armazenar e quantificar dados.
+ b) eliminar metadados.
+ c) limitar e controlar dados redundantes em múltiplos sistemas.
+ d) propiciar a automação de transições.
+ e) fornecer serviços de bottom-up e recuperação.
+
+RESPOSTA: c
+
+-----
+
+(ESAF/STN/INFRAESTRUTURA DE TI/2008) No gerenciamento de transações em bancos 
+de dados, a propriedade que deve ser garantida para dar suporte à ideia de execução 
+simultânea de um par de transações é denominada
+ a) Atomicidade.
+ b) Durabilidade
+  c) Sincronismo.
+ d) Consistência.
+ e) Isolamento.
+
+RESPOSTA: e
+
+-----
+
+(CESPE/MC/ANALISTA DE NÍVEL SUPERIOR - TECNOLOGIA DA INFORMAÇÃO/2013) Julgue 
+os itens a seguir, acerca dos fundamentos e das finalidades do banco de dados.
+ Atualmente, os bancos de dados são utilizados para armazenar e processar dados de 
+caracteres em geral, não apresentando recursos para tratar dados multimídias, como 
+filmes e fotografias
+
+RESPOSTA: errada
