@@ -18,7 +18,7 @@ export default function Start({ onSubmit } : StartProps) {
         if(!category || !subcategory) return;
         // @ts-ignore
         onSubmit(data[category][subcategory]);
-    }
+    };
 
     return (
 
