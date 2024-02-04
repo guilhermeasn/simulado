@@ -4,6 +4,7 @@ import Icon from "./Icon";
 import Quiz from "./Quiz";
 import Start from "./Start";
 import Statistic from "./Statistic";
+import View from "./View";
 
 export async function getData(file : string = 'index') {
     const response = await fetch(`data/${file}.json`);
@@ -13,7 +14,9 @@ export async function getData(file : string = 'index') {
 export default function App() {
 
     const [ quiz, setQuiz ] = useState<string | null>(null);
-    const [ modal, setModal ] = useState<boolean>(false);
+
+    const [ view, setView ] = useState<null | string>(null);
+    const [ statistic, setStatistic ] = useState<boolean>(false);
 
     return <>
     
@@ -23,7 +26,7 @@ export default function App() {
                     <Navbar.Brand href=".">
                         Simulado
                     </Navbar.Brand>
-                    <div className="text-light clickable" onClick={ () => setModal(true) }>
+                    <div className="text-light clickable" onClick={ () => setStatistic(true) }>
                         <Icon variant="chart" />
                     </div>
                 </Container>
@@ -35,7 +38,7 @@ export default function App() {
                 { quiz === null ? (
                     <Start onSubmit={ setQuiz } />
                 ) : (
-                    <Quiz file={ quiz } onEnd={ () => setQuiz(null) } />
+                    <Quiz onOpen={ setView } file={ quiz } onEnd={ () => setQuiz(null) } />
                 ) }
             </Container>
         </main>
@@ -50,8 +53,14 @@ export default function App() {
         </footer>
 
         <Statistic
-            show={ modal }
-            onHide={ () => setModal(false) }
+            show={ statistic }
+            onHide={ () => setStatistic(false) }
+        />
+
+        <View
+            file={ view ?? undefined }
+            show={ view !== null }
+            onHide={ () => setView(null) }
         />
 
     

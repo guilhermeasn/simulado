@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Alert, Button, ListGroup, Spinner } from "react-bootstrap";
 import { getData } from "./App";
+import Icon from "./Icon";
 
 function getRandomInt(min : number, max : number) : number {
     min = Math.ceil(min);
@@ -34,6 +35,7 @@ function save(file : string, hits : number, errors : number) : void {
 
 export type QuizProps = {
     file : string;
+    onOpen : (file : string) => void;
     onEnd : () => void;
 }
 
@@ -45,7 +47,7 @@ export type QuizData = {
     answer   : number;
 }
 
-export default function Quiz({ file, onEnd } : QuizProps) {
+export default function Quiz({ file, onOpen, onEnd } : QuizProps) {
 
     const [ data, setData ] = useState<QuizData[]>([]);
     useEffect(() => { getData(file).then(setData) }, [ file ]);
@@ -103,6 +105,17 @@ export default function Quiz({ file, onEnd } : QuizProps) {
                 { quiz.owner && <p className="small">{ quiz.owner }</p> }
 
                 <p className="fw-bolder">{ quiz.question }</p>
+
+                { quiz.attachs && (
+                    <div className="d-flex justify-content-end">
+                        { quiz.attachs.map(file => (
+                            <p className="m-2 text-primary clickable" onClick={ () => onOpen(file) }>
+                                <Icon variant="clip" size={ 15 } />
+                                <span className="p-1">{ file }</span>
+                            </p>
+                        )) }
+                    </div>
+                ) }
 
                 <ListGroup>
                     { quiz.options.map((option, i) => (
