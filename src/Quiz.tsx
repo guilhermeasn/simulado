@@ -21,12 +21,13 @@ function getRandomIndex(length : number) : number[] {
 
 }
 
-export type FormatSave = Record<string, { a: number; s: number; e: number }>;
+export type FormatSave = Record<string, [ number, number ]>;
 
-function save(file : string, s : number, e : number) : void {
+function save(file : string, hits : number, errors : number) : void {
     if(typeof localStorage !== 'object') return;
-    const data = JSON.parse(localStorage.getItem('quiz_score') ?? '{}') as FormatSave;
-    data[file] = file in data ? { a: data[file].a + 1, s: s + data[file].s, e: e + data[file].e } : { a: 1, s, e };
+    let data = JSON.parse(localStorage.getItem('quiz_score') ?? '{}') as FormatSave;
+    if(typeof data !== 'object' || Object.values(data).some(v => !Array.isArray(v) || typeof v[0] !== 'number' || typeof v[1] !== 'number')) data = {};
+    data[file] = [ hits, errors ];
     localStorage.setItem('quiz_score', JSON.stringify(data));
 }
 

@@ -40,23 +40,21 @@ export default function Statistic({ show, onHide } : StatisticProps) {
                     <thead>
                         <tr>
                             <th>Disciplina</th>
-                            <th>Vezes</th>
                             <th>Acertos</th>
                             <th>Erros</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        { Object.keys(data).length ? map(data, ({ a, s, e }, file) => (
+                        { Object.keys(data).length ? map(data, ([ s, e ], file) => (
                             <tr key={ file }>
                                 <td className="text-truncate">{ (files as Record<string, string>)?.[file] ?? file  }</td>
-                                <td className="text-muted">{ a }</td>
                                 <td className="bg-success-subtle text-success">{ s }</td>
                                 <td className="bg-danger-subtle text-danger">{ e }</td>
                             </tr>
                         )) : (
                             <tr>
-                                <td colSpan={ 4 } className="text-warning-emphasis">
+                                <td colSpan={ 3 } className="text-warning-emphasis">
                                     Nenhuma estatística salva!
                                 </td>
                             </tr>
