@@ -1,4 +1,4 @@
-001. (FGV/BANESTES/ANALISTA ECONÔMICO FINANCEIRO/GESTÃO CONTÁBIL/2018) A Lei 
+(FGV/BANESTES/ANALISTA ECONÔMICO FINANCEIRO/GESTÃO CONTÁBIL/2018) A Lei 
 n. 9.613, de 3 de março de 1998, que sofreu profundas alterações com a Lei n. 12.683/12, 
 dispõe sobre os crimes de “lavagem” ou ocultação de bens, direitos e valores, além da 
 prevenção da utilização do sistema financeiro para os ilícitos previstos nesse mesmo diploma 
@@ -23,7 +23,7 @@ RESPOSTA: e
 
 -----
 
-002. (FGV/BANESTES/TÉCNICO BANCÁRIO/2018) Analise as três situações a seguir.
+(FGV/BANESTES/TÉCNICO BANCÁRIO/2018) Analise as três situações a seguir.
  I – Clara, para ocultar a utilização de bens provenientes de infração penal de receptação, 
 os converte em ativos lícitos.
  II – Joana, para dissimular a utilização de bens provenientes de crime anterior praticado 
@@ -42,7 +42,7 @@ RESPOSTA: a
 
 -----
 
-003. (CESPE/FUNPRESP-EXE/ANALISTA/INVESTIMENTOS/2016) A respeito da prevenção e 
+(CESPE/FUNPRESP-EXE/ANALISTA/INVESTIMENTOS/2016) A respeito da prevenção e 
 do combate à lavagem de dinheiro, julgue o item que se segue.
  As comercializações feitas por pessoas físicas estão excluídas do escopo do monitoramento 
 e da prevenção à lavagem de dinheiro.
@@ -51,7 +51,7 @@ RESPOSTA: E
 
 -----
 
-004. (CESPE/FUNPRESP-EXE/ANALISTA/INVESTIMENTOS/2016) A respeito da prevenção e 
+(CESPE/FUNPRESP-EXE/ANALISTA/INVESTIMENTOS/2016) A respeito da prevenção e 
 do combate à lavagem de dinheiro, julgue o item que se segue.
  Todas as instituições autorizadas a funcionar pelo Banco Central do Brasil são responsáveis 
 pela prevenção ao crime de lavagem de dinheiro.
@@ -60,7 +60,7 @@ RESPOSTA: C
 
 -----
 
-005. (CESGRANRIO/BANCO DO BRASIL/ESCRITURÁRIO/2015) Sr. X é gerente de uma agência 
+(CESGRANRIO/BANCO DO BRASIL/ESCRITURÁRIO/2015) Sr. X é gerente de uma agência 
 bancária. Ele recebe o cliente, Sr. W, conhecido empresário do ramo da construção civil, 
 com inúmeras aplicações financeiras na agência. Com o passar do tempo, gerente e cliente 
 tornam-se amigos e confidentes. Em determinado dia, o empresário lhe confidencia ter 
@@ -78,7 +78,7 @@ RESPOSTA: a
 
 -----
 
-006. (CESGRANRIO/BANCO DO BRASIL/ESCRITURÁRIO/2015) Sr. X é cidadão brasileiro, 
+(CESGRANRIO/BANCO DO BRASIL/ESCRITURÁRIO/2015) Sr. X é cidadão brasileiro, 
 possuindo bens, direitos e obrigações no Brasil, bem como atividades negociais no exterior. 
 Por força de suas atividades empresariais, ele possui um cartão de crédito ilimitado, com 
 validação fora do país, emitido por instituição financeira transnacional com autorização 
@@ -98,7 +98,7 @@ RESPOSTA: e
 
 -----
 
-007. (CESGRANRIO/BANCO DO BRASIL/ESCRITURÁRIO/001/2015) O combate à lavagem de 
+(CESGRANRIO/BANCO DO BRASIL/ESCRITURÁRIO/001/2015) O combate à lavagem de 
 dinheiro tem se disseminado no mundo, tendo o rápido desenvolvimento de sofisticadas 
 organizações criminosas que utilizam o sistema financeiro para legitimar as suas atuações 
 originariamente ilícitas.
@@ -114,7 +114,7 @@ RESPOSTA: b
 
 -----
 
-008. (IADES/FUNPRESP-EXE/ANALISTA TÉCNICO/AUDITORIA/2014) Quanto às ações de 
+(IADES/FUNPRESP-EXE/ANALISTA TÉCNICO/AUDITORIA/2014) Quanto às ações de 
 combate aos crimes de “lavagem” ou ocultação de bens, direitos e valores, as entidades 
 de previdência complementar deverão
  a) manter cadastros e registros dos participantes durante o período mínimo de 20 anos a 
@@ -134,7 +134,7 @@ RESPOSTA: d
 
 -----
 
-009. (INÉDITA/2023) A respeito da Lei de Lavagem de Dinheiro assinale a alternativa correta:
+(INÉDITA/2023) A respeito da Lei de Lavagem de Dinheiro assinale a alternativa correta:
  a) A pena poderá ser reduzida de um a dois terços e ser cumprida em regime aberto ou 
 semiaberto, facultando-se ao juiz deixar de aplicá-la ou substituí-la, a qualquer tempo, por 
 pena restritiva de direitos, se o autor, coautor ou partícipe colaborar espontaneamente com 
@@ -154,7 +154,7 @@ RESPOSTA: a
 
 -----
 
-010. (INÉDITA/2023) A respeito da Lei de Lavagem de Dinheiro assinale a alternativa correta:
+(INÉDITA/2023) A respeito da Lei de Lavagem de Dinheiro assinale a alternativa correta:
  a) A pena poderá ser reduzida de um a três quintos e ser cumprida em regime aberto ou 
 semiaberto, facultando-se ao juiz deixar de aplicá-la ou substituí-la, a qualquer tempo, por 
 pena restritiva de direitos, se o autor, coautor ou partícipe colaborar espontaneamente com 
@@ -172,7 +172,7 @@ RESPOSTA: b
 
 -----
 
-011. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  No âmbito do Ministério da Economia está inserido o Conselho de Controle de Atividades 
 Financeiras – Coaf, com a finalidade de disciplinar, aplicar penas administrativas, receber, 
@@ -183,7 +183,7 @@ RESPOSTA: C
 
 -----
 
-012. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  As autoridades cometentes comunicarão o COAF para a instauração dos procedimentos 
 cabíveis, quando concluir pela existência de crime de lavagem de dinheiro, de fundados 
@@ -193,7 +193,7 @@ RESPOSTA: E
 
 -----
 
-013. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada. O Código de Processo penal tem aplicação subsidiária 
 nos processos que apuram a prática de lavagem de dinheiro por expressa determinação legal.
   
@@ -201,7 +201,7 @@ RESPOSTA: C
 
 -----
 
-014. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A autoridade policial e o Ministério Público terão acesso, exclusivamente, aos dados cadastrais 
 do investigado que informam qualificação pessoal, filiação e endereço, independentemente 
@@ -213,7 +213,7 @@ RESPOSTA: C
 
 -----
 
-015. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Após o recebimento da denúncia, pela prática de crime de lavagem de dinheiro, o servidor 
 público será afastado das atividades do cargo que ocupa, sem prejuízo de remuneração 
@@ -224,7 +224,7 @@ RESPOSTA: E
 
 -----
 
-016. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A Secretaria da Receita Federal do Brasil conservará os dados fiscais dos contribuintes 
 pelo prazo mínimo de cinco anos, contado a partir do início do exercício seguinte ao da 
@@ -234,7 +234,7 @@ RESPOSTA: C
 
 -----
 
-017. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  As transferências internacionais e os saques em espécie deverão ser previamente comunicados 
 à instituição financeira, nos termos, limites, prazos e condições fixados pelo Banco Central 
@@ -244,7 +244,7 @@ RESPOSTA: C
 
 -----
 
-018. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada. O COAF determinará, na hipótese de existência de 
 tratado ou convenção internacional e por solicitação de autoridade estrangeira competente, 
 medidas assecuratórias sobre bens, direitos ou valores oriundos de crimes de lavagem de 
@@ -254,7 +254,7 @@ RESPOSTA: E
 
 -----
 
-019. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  O juiz somente poderá decretar medidas assecuratória se houver requerimento do Ministério 
 Público ou representação da Autoridade Policial
@@ -263,7 +263,7 @@ RESPOSTA: E
 
 -----
 
-020. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A denúncia será instruída com indícios suficientes da existência da infração penal antecedente, 
 sendo puníveis os fatos previstos na lei de lavagem de dinheiro, ainda que desconhecido ou 
@@ -273,7 +273,7 @@ RESPOSTA: C
 
 -----
 
-021. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  É tipificado como crime de lavagem de dinheiro o ato de ocultar ou dissimular a natureza, 
 origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores 
@@ -283,7 +283,7 @@ RESPOSTA: C
 
 -----
 
-022. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  O crime de lavagem de dinheiro, tipificado na lei n. 9;613/1998, é punido com pena de reclusão 
 de 03 (três) a 10 (dez) anos, não havendo previsão legal para aplicação da pena de multa.
@@ -292,7 +292,7 @@ RESPOSTA: E
 
 -----
 
-023. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Aquele que importa ou exporta bens com valores não correspondentes aos verdadeiros, 
 não pratica crime o crime de lei de lavagem de dinheiro, mesmo que o objetivo seja o de 
@@ -303,7 +303,7 @@ RESPOSTA: E
 
 -----
 
-024. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  No crime de lavagem de dinheiro não se admite o instituto da tentativa.
   
@@ -311,7 +311,7 @@ RESPOSTA: E
 
 -----
 
-025. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A pena será aumentada de um a dois terços, se os crimes definidos nesta Lei forem cometidos 
 de forma reiterada ou por intermédio de organização criminosa.
@@ -320,7 +320,7 @@ RESPOSTA: C
 
 -----
 
-026. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A pena poderá ser reduzida de um a dois terços e ser cumprida em regime aberto ou 
 semiaberto, facultando-se ao juiz deixar de aplicá-la ou substituí-la, a qualquer tempo, por 
@@ -333,7 +333,7 @@ RESPOSTA: C
 
 -----
 
-027. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Para a apuração do crime de lavagem de dinheiro, admite-se a utilização da ação controlada 
 e da infiltração de agentes.
@@ -342,7 +342,7 @@ RESPOSTA: C
 
 -----
 
-028. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Para o início do processo referente ao crime de lavagem de dinheiro, é imprescindível que 
 tenha havido o processo e julgamento das infrações penais antecedentes, ou seja, dos 
@@ -352,7 +352,7 @@ RESPOSTA: E
 
 -----
 
-029. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Quando o crime de lavagem de dinheiro for praticado contra o sistema financeiro e a ordem 
 econômico-financeira, ou em detrimento de bens, serviços ou interesses da União, ou de 
@@ -362,7 +362,7 @@ RESPOSTA: C
 
 -----
 
-030. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Na definição da competência judicial, para processo e julgamento do crime de lavagem de 
 dinheiro, é indiferente a natureza do crime antecedente, ou seja, o fato de a infração penal 
@@ -373,7 +373,7 @@ RESPOSTA: E
 
 -----
 
-031. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  No processo que apura o crime de lavagem de dinheiro, a denúncia será aceita, somente se 
 não tiver sido extinta a punibilidade da infração penal antecedente.
@@ -382,7 +382,7 @@ RESPOSTA: E
 
 -----
 
-032. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  O juiz, de ofício, a requerimento do Ministério Público ou mediante representação do 
 delegado de polícia, ouvido o Ministério Público em 24 (vinte e quatro) horas, havendo 
@@ -395,7 +395,7 @@ RESPOSTA: C
 
 -----
 
-033. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  No processo que apura o crime de lavagem de dinheiro, poderão ser decretadas medidas 
 assecuratórias sobre bens, direitos ou valores para reparação do dano decorrente da infração 
@@ -406,7 +406,7 @@ RESPOSTA: C
 
 -----
 
-034. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A alienação antecipada para preservação de valor de bens sob constrição será decretada pelo 
 juiz, de ofício, a requerimento do Ministério Público ou por solicitação da parte interessada, 
@@ -417,7 +417,7 @@ RESPOSTA: C
 
 -----
 
-035. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A ordem de prisão de pessoas ou as medidas assecuratórias de bens, direitos ou valores 
 poderão ser suspensas pelo juiz, ouvido o Ministério Público, quando a sua execução imediata 
@@ -427,7 +427,7 @@ RESPOSTA: C
 
 -----
 
-036. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Quando as circunstâncias o aconselharem, o juiz, ouvido o Ministério Público, nomeará pessoa 
 física ou jurídica qualificada para a administração dos bens, direitos ou valores sujeitos a 
@@ -437,7 +437,7 @@ RESPOSTA: C
 
 -----
 
-037. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Além dos efeitos elencados pelo Código Penal, a condenação por lavagem de dinheiro produz, 
 também, o efeito de perda, em favor da União – e dos Estados, nos casos de competência da 
@@ -448,7 +448,7 @@ RESPOSTA: E
 
 -----
 
-038. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Os instrumentos do crime sem valor econômico cuja perda em favor da União ou do Estado 
 for decretada serão inutilizados, ou doados a museu criminal ou a entidade pública, se 
@@ -458,7 +458,7 @@ RESPOSTA: C
 
 -----
 
-039. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  O Conselho de Controle de Atividades Financeiras – Coaf integra a estrutura do Ministério 
 da Justiça.
@@ -467,7 +467,7 @@ RESPOSTA: E
 
 -----
 
-040. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  O Conselho de Controle de Atividades Financeiras – Coaf foi criado com a finalidade de 
 disciplinar, aplicar penas administrativas, receber, examinar e identificar as ocorrências 
@@ -478,7 +478,7 @@ RESPOSTA: C
 
 -----
 
-041. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  O COAF não tem competência legal para requerer aos órgãos da Administração Pública 
 as informações cadastrais bancárias e financeiras de pessoas envolvidas em atividades 
@@ -488,7 +488,7 @@ RESPOSTA: E
 
 -----
 
-042. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  O COAF comunicará às autoridades competentes para a instauração dos procedimentos 
 cabíveis, quando concluir pela existência de lavagem de dinheiro, de fundados indícios de 
@@ -498,7 +498,7 @@ RESPOSTA: C
 
 -----
 
-043. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  No processo da Lei n. 9.613/98 admite-se aplicação subsidiária do Código de Processo 
 Penal, naquilo que for compatível e quando houver lacuna.
@@ -507,7 +507,7 @@ RESPOSTA: C
 
 -----
 
-044. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A autoridade policial e o Ministério Público terão acesso, exclusivamente, aos dados cadastrais 
 do investigado que informam qualificação pessoal, filiação e endereço, independentemente 
@@ -519,7 +519,7 @@ RESPOSTA: C
 
 -----
 
-045. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Os encaminhamentos das instituições financeiras e tributárias em resposta às ordens 
 judiciais de quebra ou transferência de sigilo deverão ser, sempre que determinado, em 
@@ -530,7 +530,7 @@ RESPOSTA: C
 
 -----
 
-046. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  Em caso de indiciamento de servidor público, este será afastado, sem prejuízo de 
 remuneração e demais direitos previstos em lei, até que o juiz competente autorize, em 
@@ -540,7 +540,7 @@ RESPOSTA: C
 
 -----
 
-047. (INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
+(INÉDITA/2023) Tendo por base a Lei de Lavagem de Dinheiro (Lei n. 9.613/98) responda 
 se a afirmação está certa ou errada.
  A Secretaria da Receita Federal do Brasil conservará os dados fiscais dos contribuintes 
 pelo prazo mínimo de 02 (dois) anos, contado a partir do início do exercício seguinte ao da 
