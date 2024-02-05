@@ -13,31 +13,56 @@ import { existsSync } from "fs";
 import type { QuizData } from '../src/Quiz';
 import type { Data } from '../src/Start';
 
-function getQuiz(txt : string, origin : string) : QuizData {
+function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
 
-    txt = txt.trim();
-    const owner = txt.match(/^\(.+?\)/)?.[0]?.replace(/^\((.+)\)$/, '$1');
-    if(owner) txt = txt.replace(/^\(.+?\)/, '');
+    // ANEXOS
 
-    const attachs = [ ...txt.matchAll(/(?<=ANEXO:\s*)[\w.]+/g) ].map(o => o.toString()).filter(f => existsSync(origin + '/__anexos__/' + f));
-    txt = txt.replace(/ANEXO:\s*[\w.]+/g, '');
+    let data = txt.trim();
+    const attachs = data.match(/(?<=ANEXO:\s*)[\w.-]+/g)?.filter(exists);
+    data = data.replace(/ANEXO:\s*[\w.-]+/g, '');
 
-    const question = txt.match(/.+?(?=([a-zA-Z]\).+?){2,}|RESPOSTA)/)?.[0] ?? '';
+    // RESPOSTA CHAR
 
-    const optionsData = txt.match(/\s(([a-zA-Z]\).+?){2,})RESPOSTA/)?.[1];
-    const options = optionsData ? [ ...optionsData.matchAll(/.+?(?=[a-zA-Z]\)|$)/g) ].map(o => o.toString().trim()) : [ 'Certo', 'Errado' ];
+    data = data.trim();
+    const answerData = data.match(/RESPOSTA:\s*([a-zA-Z])/)?.[1]
+    if(!answerData) throw Error('Existe uma pergunta sem RESPOSTA: ' + txt);
+    data = data.replace(/RESPOSTA:\s*\S+/, '');
 
-    const answerData = txt.match(/RESPOSTA:\s*([a-zA-Z])/)?.[1]
-    if(!answerData) throw Error('Existe uma pergunta sem RESPOSTA: ' + question);
+    // OPCOES
+
+    data = data.trim();
+    const optionsData = data.match(/(\s[a-zA-Z]\).+?){2,}$/)?.[0];
+    if(optionsData) data = data.replace(/(\s[a-zA-Z]\).+?){2,}$/, '');
+    const options = optionsData?.match(/(?<=\s)[a-zA-Z]\).+?(?=\s[a-zA-Z]\)|$)/g)?.map(m => m.toString().trim()) ?? [ 'Certo', 'Errado' ];
+
+    // RESPOSTA INDEX
 
     const answer = options.findIndex(o => o.charAt(0).toLowerCase() === answerData.charAt(0).toLowerCase());
-    if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada: ' + question);
+    if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada: ' + txt);
+
+    // ITENS
+
+    // data = data.trim();
+    // const itemsData = data.match(/(\s[IVXLCDM]+\s[-–]\s.+?){2,}$/)?.[0];
+    // if(itemsData) data = data.replace(/(\s[IVXLCDM]+\s[-–]\s.+?){2,}$/, '');
+    // const items = itemsData?.match(/[IVXLCDM]+\s[-–]\s.+?(?=[IVXLCDM]+\s[-–]\s|$)/g)?.map(m => m.toString());
+
+    // BANCA
+
+    data = data.trim();
+    const owner = data.match(/^\(.+?\)/)?.[0]?.replace(/^\((.+)\)$/, '$1');
+    if(owner) data = data.replace(/^\(.+?\)/, '');
+
+    // QUESTAO
+
+    const question = data.trim();
 
     return {
-        attachs,
         owner,
         question,
+        // items,
         options,
+        attachs,
         answer,
     }
 
@@ -72,7 +97,7 @@ async function main(origin : string, destiny : string) : Promise<void> {
             txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
 
             const file = 'q' + count++;
-            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(t => getQuiz(t, origin))));
+            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(t => getQuiz(t, f => existsSync(origin + '/__anexos__/' + f))), undefined, 2));
 
             data[category][subcategory.replace(/.txt$/i, '')] = file;
             files[file] = subcategory.replace(/.txt$/i, '');
@@ -82,7 +107,6 @@ async function main(origin : string, destiny : string) : Promise<void> {
     }
 
     await writeFile(destiny + '/index.json', JSON.stringify(data, undefined, 4));
-    await writeFile(destiny + '/files.json', JSON.stringify(files, undefined, 4));
 
 }
 
