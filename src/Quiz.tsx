@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
 import { Alert, Button, ListGroup, Spinner } from "react-bootstrap";
 import { getData } from "./App";
 import Icon from "./Icon";
@@ -43,7 +43,7 @@ export type QuizProps = {
 export type QuizData = {
     owner   ?: string;
     attachs ?: string[];
-    question : string;
+    question : string[];
     options  : string[];
     answer   : number;
 }
@@ -105,7 +105,14 @@ export default function Quiz({ file, name, onOpen, onEnd } : QuizProps) {
 
                 { quiz.owner && <p className="small">{ quiz.owner }</p> }
 
-                <p className="fw-bolder">{ quiz.question }</p>
+                <p className="fw-bolder">
+                    { quiz.question.map((p, i) => (
+                        <Fragment key={ i }>
+                            { p }
+                            <br />
+                        </Fragment>
+                    )) }
+                </p>
 
                 { quiz.attachs && (
                     <div className="d-flex justify-content-end">

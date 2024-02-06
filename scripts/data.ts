@@ -40,13 +40,6 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
     const answer = options.findIndex(o => o.charAt(0).toLowerCase() === answerData.charAt(0).toLowerCase());
     if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada: ' + txt);
 
-    // ITENS
-
-    // data = data.trim();
-    // const itemsData = data.match(/(\s[IVXLCDM]+\s[-–]\s.+?){2,}$/)?.[0];
-    // if(itemsData) data = data.replace(/(\s[IVXLCDM]+\s[-–]\s.+?){2,}$/, '');
-    // const items = itemsData?.match(/[IVXLCDM]+\s[-–]\s.+?(?=[IVXLCDM]+\s[-–]\s|$)/g)?.map(m => m.toString());
-
     // BANCA
 
     data = data.trim();
@@ -55,12 +48,12 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
 
     // QUESTAO
 
-    const question = data.trim();
+    data = data.trim();
+    const question = data.match(/.{30,}?[.|:](?=\s*[A-Z])|.+$/g)?.map(m => m.toString().trim()) ?? [ data ];
 
     return {
         owner,
         question,
-        // items,
         options,
         attachs,
         answer,
@@ -74,8 +67,6 @@ async function main(origin : string, destiny : string) : Promise<void> {
     await mkdir(destiny);
 
     const data : Data = {};
-    const files : Record<string, string> = {};
-
     let count : number = 100;
 
     for(let category of (await readdir(origin))) {
@@ -100,7 +91,6 @@ async function main(origin : string, destiny : string) : Promise<void> {
             await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(t => getQuiz(t, f => existsSync(origin + '/__anexos__/' + f))), undefined, 2));
 
             data[category][subcategory.replace(/.txt$/i, '')] = file;
-            files[file] = subcategory.replace(/.txt$/i, '');
 
         }
 
