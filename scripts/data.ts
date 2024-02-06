@@ -15,6 +15,11 @@ import type { Data } from '../src/Start';
 
 function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
 
+    const error = (message : string) => ({
+        error: message,
+        question: txt
+    });
+
     // ANEXOS
 
     let data = txt.trim();
@@ -25,7 +30,7 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
 
     data = data.trim();
     const answerData = data.match(/RESPOSTA:\s*([a-zA-Z])/)?.[1]
-    if(!answerData) throw Error('Existe uma pergunta sem RESPOSTA: ' + txt);
+    if(!answerData) throw error('Existe uma pergunta sem RESPOSTA');
     data = data.replace(/RESPOSTA:\s*\S+/, '');
 
     // OPCOES
@@ -38,7 +43,7 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
     // RESPOSTA INDEX
 
     const answer = options.findIndex(o => o.charAt(0).toLowerCase() === answerData.charAt(0).toLowerCase());
-    if(answer < 0) throw Error('Existe uma pergunta com uma RESPOSTA não encontrada: ' + txt);
+    if(answer < 0) throw error('Existe uma pergunta com uma RESPOSTA não encontrada');
 
     // BANCA
 
@@ -82,7 +87,7 @@ async function main(origin : string, destiny : string) : Promise<void> {
         
         for(let subcategory of (await readdir(origin + '/' + category))) {
 
-            if(!/\.txt/i.test(subcategory)) continue;
+            if(!/\.txt/i.test(subcategory) || !(await lstat(`${origin}/${category}/${subcategory}`)).isFile()) continue;
 
             let txt = await readFile(`${origin}/${category}/${subcategory}`, { encoding: 'utf8' });
             txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
@@ -96,8 +101,10 @@ async function main(origin : string, destiny : string) : Promise<void> {
 
     }
 
-    await writeFile(destiny + '/index.json', JSON.stringify(data, undefined, 4));
+    await writeFile(destiny + '/index.json', JSON.stringify(data, undefined, 2));
 
 }
 
-main('data', 'public/data').then(() => console.log('The data was compiled!'));
+main('data', 'public/data')
+    .then(() => console.log('The data was compiled!'))
+    .catch(e => { console.error(e); process.exitCode = 1; });
