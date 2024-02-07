@@ -23,19 +23,9 @@ function getRandomIndex(length : number) : number[] {
 
 }
 
-export type FormatSave = Record<string, [ number, number ]>;
-
-function save(name : string, hits : number, errors : number) : void {
-    if(typeof localStorage !== 'object') return;
-    let data = JSON.parse(localStorage.getItem('quiz_score') ?? '{}') as FormatSave;
-    if(typeof data !== 'object' || Object.values(data).some(v => !Array.isArray(v) || typeof v[0] !== 'number' || typeof v[1] !== 'number')) data = {};
-    data[name] = [ hits, errors ];
-    localStorage.setItem('quiz_score', JSON.stringify(data));
-}
-
 export type QuizProps = {
     file : string;
-    name : string;
+    onSave : (hits : number, errors : number) => void;
     onOpen : (file : string) => void;
     onEnd : () => void;
 }
@@ -48,7 +38,7 @@ export type QuizData = {
     answer   : number;
 }
 
-export default function Quiz({ file, name, onOpen, onEnd } : QuizProps) {
+export default function Quiz({ file, onSave, onOpen, onEnd } : QuizProps) {
 
     const [ data, setData ] = useState<QuizData[]>([]);
     useEffect(() => { getData(file).then(setData) }, [ file ]);
@@ -63,8 +53,9 @@ export default function Quiz({ file, name, onOpen, onEnd } : QuizProps) {
     useEffect(() => setHit(Array(data.length).fill(null)), [data]);
 
     const quiz : QuizData | null = useMemo(() => data?.[sequence?.[index] ?? 'end'] ?? null, [data, index, sequence]);
-
-    useEffect(() => { if(quiz === null && file && hit.length) save(name, getHits(true), getHits(false)); }, [file, getHits, hit, name, quiz]);
+    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => { if(quiz === null && file && hit.length) onSave(getHits(true), getHits(false)); }, [file, hit, quiz]);
 
     const submit = useCallback(() => {
         if(answer === null) return;

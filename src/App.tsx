@@ -2,18 +2,13 @@ import { useState } from "react";
 import { Container, Image, Navbar } from "react-bootstrap";
 import Icon from "./Icon";
 import Quiz from "./Quiz";
-import Start from "./Start";
+import Start, { QuizInfo } from "./Start";
 import Statistic from "./Statistic";
 import View from "./View";
 
-export async function getData(file : string = 'index') {
-    const response = await fetch(`data/${file}.json`);
-    return await response.json();
-}
-
 export default function App() {
 
-    const [ quiz, setQuiz ] = useState<[string, string] | null>(null);
+    const [ quiz, setQuiz ] = useState<QuizInfo | null>(null);
 
     const [ view, setView ] = useState<null | string>(null);
     const [ statistic, setStatistic ] = useState<boolean>(false);
@@ -37,9 +32,16 @@ export default function App() {
         <main className="my-5 min-vh-70">
             <Container>
                 { quiz === null ? (
-                    <Start onSubmit={ (file, name) => setQuiz([ file, name ]) } />
+                    <Start
+                        onSubmit={ setQuiz }
+                    />
                 ) : (
-                    <Quiz name={ quiz[1] } onOpen={ setView } file={ quiz[0] } onEnd={ () => setQuiz(null) } />
+                    <Quiz
+                        file={ quiz.file }
+                        onOpen={ setView }
+                        onEnd={ () => setQuiz(null) }
+                        onSave={ (hits, errors) => save(quiz, hits, errors) }
+                    />
                 ) }
             </Container>
         </main>
@@ -67,4 +69,20 @@ export default function App() {
     
     </>;
 
+}
+
+export async function getData(file : string = 'index') {
+    const response = await fetch(`data/${file}.json`);
+    return await response.json();
+}
+
+export type FormatSave = Record<`${string}/${string}`, [ number, number ]>;
+
+function save(quiz : QuizInfo, hits : number, errors : number) : void {
+    if(typeof localStorage !== 'object') return;
+    let data = JSON.parse(localStorage.getItem('quiz_score') ?? '{}') as FormatSave;
+    if(typeof data !== 'object' || Object.values(data).some(v => !Array.isArray(v) || typeof v[0] !== 'number' || typeof v[1] !== 'number')) data = {};
+    const key : `${string}/${string}` = `${quiz.category.replace('/','')}/${quiz.subcategory.replace('/','')}`;
+    data[key] = [ hits, errors ];
+    localStorage.setItem('quiz_score', JSON.stringify(data));
 }

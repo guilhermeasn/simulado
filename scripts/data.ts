@@ -23,8 +23,11 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
     // ANEXOS
 
     let data = txt.trim();
-    const attachs = data.match(/(?<=ANEXO:\s*)[\w.-]+/g)?.filter(exists);
-    data = data.replace(/ANEXO:\s*[\w.-]+/g, '');
+    const attachs = data.match(/(?<=ANEXO:\s*)\S+/g)?.map(m => m.toString());
+    if(attachs) attachs.forEach(attach => {
+        if(!exists(attach)) throw error(`O anexo '${attach}' não foi encontrado`);
+    });
+    data = data.replace(/ANEXO:\s*\S+/g, '');
 
     // RESPOSTA CHAR
 

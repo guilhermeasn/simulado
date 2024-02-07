@@ -1,8 +1,8 @@
 import map from "object-as-array/map";
 import { useEffect, useState } from "react";
 import { Button, Modal, Table } from "react-bootstrap";
+import { FormatSave } from "./App";
 import Icon from "./Icon";
-import { FormatSave } from "./Quiz";
 
 export type StatisticProps = {
     show : boolean;
@@ -37,7 +37,7 @@ export default function Statistic({ show, onHide } : StatisticProps) {
                 <Table striped bordered hover responsive>
 
                     <thead>
-                        <tr>
+                        <tr className="text-center">
                             <th>Disciplina</th>
                             <th>Acertos</th>
                             <th>Erros</th>
@@ -45,13 +45,27 @@ export default function Statistic({ show, onHide } : StatisticProps) {
                     </thead>
 
                     <tbody>
-                        { Object.keys(data).length ? map(data, ([ s, e ], name) => (
-                            <tr key={ name }>
-                                <td className="text-truncate">{ name  }</td>
-                                <td className="bg-success-subtle text-success">{ s }</td>
-                                <td className="bg-danger-subtle text-danger">{ e }</td>
-                            </tr>
-                        )) : (
+                        { Object.keys(data).length ? map(data, ([ hits, errors ], name) => {
+
+                            const [ category, subcategory ] = name.split('/');
+
+                            return (
+                                <tr key={ name }>
+                                    <td className="small">
+                                        <span className="text-truncate">{ category }</span>
+                                        <br />
+                                        <span className="text-truncate">{ subcategory }</span>
+                                    </td>
+                                    <td className="bg-success-subtle text-success text-center pt-3 h5">
+                                        { hits }
+                                    </td>
+                                    <td className="bg-danger-subtle text-danger text-center pt-3 h5">
+                                        { errors }
+                                    </td>
+                                </tr>
+                             );
+
+                        }) : (
                             <tr>
                                 <td colSpan={ 3 } className="text-warning-emphasis">
                                     Nenhuma estatística salva!

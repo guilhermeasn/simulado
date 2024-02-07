@@ -2,8 +2,14 @@ import { FormEvent, useEffect, useMemo, useState } from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { getData } from './App';
 
+export type QuizInfo = {
+    file : string;
+    category : string;
+    subcategory : string;
+}
+
 export type StartProps = {
-    onSubmit : (file : string, name : string) => void
+    onSubmit : (quiz : QuizInfo) => void
 }
 
 type Category = string;
@@ -23,10 +29,17 @@ export default function Start({ onSubmit } : StartProps) {
     const categories = useMemo(() => Object.keys(data), [data]);
 
     const submit = (event : FormEvent<HTMLFormElement>) => {
+
         event.preventDefault();
+
         if(!category || !subcategory) return;
-        // @ts-ignore
-        onSubmit(data[category][subcategory], category + ': ' + subcategory);
+
+        onSubmit({
+            file: data[category][subcategory],
+            category: category,
+            subcategory: subcategory
+        });
+        
     };
 
     return (
