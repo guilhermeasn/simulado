@@ -70,7 +70,7 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
 
 }
 
-async function main(origin : string, destiny : string) : Promise<void> {
+async function main(origin : string, destiny : string, attachs : string) : Promise<void> {
 
     await rm(destiny, { recursive: true, force: true });
     await mkdir(destiny);
@@ -82,8 +82,8 @@ async function main(origin : string, destiny : string) : Promise<void> {
 
         if(!(await lstat(origin + '/' + category)).isDirectory()) continue;
 
-        if(category === '__anexos__') {
-            await cp(origin + '/__anexos__', destiny + '/__anexos__', { recursive: true });
+        if(category === attachs) {
+            await cp(`${origin}/${attachs}`, `${destiny}/${attachs}`, { recursive: true });
             continue;
         }
 
@@ -97,7 +97,10 @@ async function main(origin : string, destiny : string) : Promise<void> {
             txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
 
             const file = 'q' + count++;
-            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(t => getQuiz(t, f => existsSync(origin + '/__anexos__/' + f))), undefined, 2));
+            
+            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(t => (
+                getQuiz(t, file => existsSync(`${origin}/${attachs}/${file}`))
+            )), undefined, 2));
 
             data[category][subcategory.replace(/.txt$/i, '')] = file;
 
@@ -109,6 +112,6 @@ async function main(origin : string, destiny : string) : Promise<void> {
 
 }
 
-main('data', 'public/data')
+main('data', 'public/data', '__anexos__')
     .then(() => console.log('The data was compiled!'))
     .catch(e => { console.error(e); process.exitCode = 1; });
