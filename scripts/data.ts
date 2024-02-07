@@ -80,16 +80,20 @@ async function main(origin : string, destiny : string, attachs : string) : Promi
 
     for(let category of (await readdir(origin))) {
 
-        if(!(await lstat(origin + '/' + category)).isDirectory()) continue;
+        if(!(await lstat(`${origin}/${category}`)).isDirectory()) continue;
 
         if(category === attachs) {
-            await cp(`${origin}/${attachs}`, `${destiny}/${attachs}`, { recursive: true });
+            await cp(
+                `${origin}/${attachs}`,
+                `${destiny}/${attachs}`,
+                { recursive: true }
+            );
             continue;
         }
 
         data[category] = {}
         
-        for(let subcategory of (await readdir(origin + '/' + category))) {
+        for(let subcategory of (await readdir(`${origin}/${category}`))) {
 
             if(!/\.txt/i.test(subcategory) || !(await lstat(`${origin}/${category}/${subcategory}`)).isFile()) continue;
 
@@ -97,8 +101,8 @@ async function main(origin : string, destiny : string, attachs : string) : Promi
             txt = txt.replace(/[\n\r]/g, ' ').replace(/\s{2,}/g, ' ');
 
             const file = 'q' + count++;
-            
-            await writeFile(destiny + '/' + file + '.json', JSON.stringify(txt.split('-----').map(t => (
+
+            await writeFile(`${destiny}/${file}.json`, JSON.stringify(txt.split('-----').map(t => (
                 getQuiz(t, file => existsSync(`${origin}/${attachs}/${file}`))
             )), undefined, 2));
 
