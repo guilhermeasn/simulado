@@ -29,10 +29,10 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
     });
     data = data.replace(/ANEXO:\s*\S+/g, '');
 
-    // RESPOSTA CHAR
+    // RESPOSTA STRING
 
     data = data.trim();
-    const answerData = data.match(/RESPOSTA:\s*([a-zA-Z])/)?.[1]
+    const answerData = data.match(/RESPOSTA:\s*(\S+)/)?.[1]
     if(!answerData) throw error('Existe uma pergunta sem RESPOSTA');
     data = data.replace(/RESPOSTA:\s*\S+/, '');
 
@@ -46,7 +46,7 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
     // RESPOSTA INDEX
 
     const answer = options.findIndex(o => o.charAt(0).toLowerCase() === answerData.charAt(0).toLowerCase());
-    if(answer < 0) throw error('Existe uma pergunta com uma RESPOSTA não encontrada');
+    if(answer < 0) throw error(`A resposta '${answerData}' não foi encontrada entre as opções da questão.`);
 
     // BANCA
 
