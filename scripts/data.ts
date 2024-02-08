@@ -58,7 +58,7 @@ function getQuiz(txt : string, exists : (file : string) => boolean) : QuizData {
 
     data = data.trim();
     if(!data) throw error('A questão não foi bem definida');
-    const question = data.match(/.{30,}?[.|:](?=\s*[A-Z])|.+$/g)?.map(m => m.toString().trim()) ?? [ data ];
+    const question = data.match(/.{30,}?[.;:](?=\s*[A-Z])|.+$/g)?.map(m => m.toString().trim()) ?? [ data ];
 
     return {
         owner,
